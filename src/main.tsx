@@ -1,13 +1,12 @@
-import React from "react";
-import ReactDOM from "react-dom/client";
-import App from "./App.tsx";
-import "./index.css";
-import { Amplify } from "aws-amplify";
-import outputs from "../amplify_outputs.json";
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import App from './App';
+import './index.css';
 
-Amplify.configure(outputs);
+// Create the root element and render the app
+const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement);
 
-ReactDOM.createRoot(document.getElementById("root")!).render(
+root.render(
   <React.StrictMode>
     <App />
   </React.StrictMode>

@@ -1,0 +1,850 @@
+{
+  "testName": "Data Management Foundations Practice Test",
+  "instructions": "Identify the choice that best completes the statement or answers the question.",
+  "questions": [
+    {
+      "id": 1,
+      "question": "A record consists of a ____.",
+      "choices": {
+        "a": "character",
+        "b": "collection of related records",
+        "c": "set of one or more fields",
+        "d": "group of files"
+      },
+      "answer": "C",
+      "explanation": "A record is a collection of fields that together describe all the necessary information about a single instance of an entity. It is the basic unit of data storage in a table."
+    },
+    {
+      "id": 2,
+      "question": "A DBMS performs several important functions that guarantee the integrity and consistency of the data in the database. Which of the following is NOT one of those functions?",
+      "choices": {
+        "a": "Data integrity management",
+        "b": "Data storage management",
+        "c": "Data reports",
+        "d": "Security management"
+      },
+      "answer": "C",
+      "explanation": "A DBMS is responsible for maintaining the integrity, secure storage, and consistency of the data, but generating reports is typically the job of specialized reporting tools rather than the DBMS itself."
+    },
+    {
+      "id": 3,
+      "question": "Which item is unstructured data.",
+      "choices": {
+        "a": "A record representing one student",
+        "b": "A video",
+        "c": "A table that holds student data",
+        "d": "A relational database that hold course registration data."
+      },
+      "answer": "B",
+      "explanation": "Unstructured data does not adhere to a fixed format or schema. Multimedia files, like videos, are classic examples of unstructured data."
+    },
+    {
+      "id": 4,
+      "question": "Data is/are:",
+      "choices": {
+        "a": "information",
+        "b": "raw facts",
+        "c": "processed information",
+        "d": "a DBMS"
+      },
+      "answer": "B",
+      "explanation": "Data refers to raw, unprocessed facts and figures. It becomes 'information' only once it has been processed or analyzed."
+    },
+    {
+      "id": 5,
+      "question": "Which classification is correct for the box marked 'Registration' in the given E-R Diagram?",
+      "images": ["d426_5.png"],
+      "choices": {
+        "a": "Intersection data",
+        "b": "Modality data",
+        "c": "Cardinality data",
+        "d": "Student data"
+      },
+      "answer": "A",
+      "explanation": ""
+    },
+    {
+      "id": 6,
+      "question": "Which type of relationship exists between Student and Course?",
+      "images": ["d426_6.png"],
+      "choices": {
+        "a": "One-to-many binary",
+        "b": "Many-to-many binary",
+        "c": "One-to-many unary",
+        "d": "Many-to-many unary"
+      },
+      "answer": "B",
+      "explanation": ""
+    },
+    {
+      "id": 7,
+      "question": "What is the E-R Diagram about an online pet food vendor showing?",
+      "images": ["d426_7.png"],
+      "choices": {
+        "a": "An Invoice Line can include many Items",
+        "b": "An item can only be included in one Invoice Line",
+        "c": "One Invoice Line must include a minimum of one and a maximum of one Item.",
+        "d": "The relationship between Item and Invoice Line is many-to-many."
+      },
+      "answer": "C",
+      "explanation": ""
+    },
+    {
+      "id": 8,
+      "question": "A pet owner can have many pets; a specific pet is linked to one pet owner. Which kind of binary relationship is described in this example?",
+      "choices": {
+        "a": "One-to-one",
+        "b": "One-to-many",
+        "c": "Many-to-many",
+        "d": "Associative"
+      },
+      "answer": "B",
+      "explanation": "In a one-to-many relationship, one record (pet owner) may be associated with many records (pets), while each pet is associated with exactly one pet owner."
+    },
+    {
+      "id": 9,
+      "question": "Database models were developed to ____.",
+      "choices": {
+        "a": "model real-world events or conditions",
+        "b": "deposit data within a single file",
+        "c": "keep data within multiple data repositories",
+        "d": "allow DBMSs to maintain loose control over the database activities"
+      },
+      "answer": "A",
+      "explanation": "Database models serve as frameworks to represent real-world information and relationships. They provide a conceptual structure that guides how data is stored and managed."
+    },
+    {
+      "id": 10,
+      "question": "What is the correct way to read the modality on the right side of the association in the Coordinator Activity diagram?",
+      "images": ["d426_10.png"],
+      "choices": {
+        "a": "A maximum of one activity",
+        "b": "A maximum of zero activities",
+        "c": "A minimum of zero activities",
+        "d": "A maximum of many activities"
+      },
+      "answer": "C",
+      "explanation": ""
+    },
+    {
+      "id": 11,
+      "question": "What is the modality of Volunteer in the given diagram?",
+      "images": ["d426_11.png"],
+      "choices": {
+        "a": "Two or more",
+        "b": "Two",
+        "c": "Dependent on registration date",
+        "d": "At least one"
+      },
+      "answer": "D",
+      "explanation": ""
+    },
+    {
+      "id": 12,
+      "question": "What type of relationship is expressed with the phrase 'A Painter paints one or more Paintings'?",
+      "choices": {
+        "a": "1:M",
+        "b": "1:1",
+        "c": "M:1",
+        "d": "M:N"
+      },
+      "answer": "A",
+      "explanation": "A painter can create many paintings while each painting is produced by a single painter, indicating a one-to-many relationship."
+    },
+    {
+      "id": 13,
+      "question": "The entity integrity rule requires that ____.",
+      "choices": {
+        "a": "all primary key entries are unique",
+        "b": "a part of the key may be null",
+        "c": "foreign key values do not reference primary key values",
+        "d": "duplicate object values are allowed"
+      },
+      "answer": "A",
+      "explanation": "Entity integrity ensures that every primary key value is both unique and not null, which is critical for uniquely identifying each record in a table."
+    },
+    {
+      "id": 14,
+      "question": "What does the 'refer' in referential integrity mean?",
+      "choices": {
+        "a": "The relationships between entities and attributes, also called referrals",
+        "b": "Reference points that databases place in each record during backups",
+        "c": "A foreign key in a table must refer to a valid primary key in another table.",
+        "d": "you delete a row in one table whose primary key does not have a matching foreign key value in another table"
+      },
+      "answer": "C",
+      "explanation": "Referential integrity requires that any foreign key in a table must correspond to an existing primary key in a related table, thereby ensuring data accuracy and consistency across tables."
+    },
+    {
+      "id": 15,
+      "question": "A table is perceived as a ____.",
+      "choices": {
+        "a": "flat structure",
+        "b": "two-dimensional structure",
+        "c": "linked structure",
+        "d": "graph"
+      },
+      "answer": "B",
+      "explanation": "A relational table is organized into rows and columns, forming a two-dimensional structure that stores data in a structured format."
+    },
+    {
+      "id": 16,
+      "question": "Another word for the term 'relation' is ____.",
+      "choices": {
+        "a": "datafile",
+        "b": "data index",
+        "c": "table",
+        "d": "data query"
+      },
+      "answer": "C",
+      "explanation": "In relational database terminology, 'relation' is synonymous with 'table' because both refer to data organized in rows and columns."
+    },
+    {
+      "id": 17,
+      "question": "DISTINT filters the results to remove duplicates. ORDER BY ____.",
+      "choices": {
+        "a": "does the same thing.",
+        "b": "alters the order of the rows in a table.",
+        "c": "modifies the presentation by changing the order of the result set.",
+        "d": "removes duplicates in the table."
+      },
+      "answer": "C",
+      "explanation": "ORDER BY is used to arrange the output in a specified order, whereas DISTINCT is used to eliminate duplicate rows. They serve different purposes."
+    },
+    {
+      "id": 18,
+      "question": "A primary key ____.",
+      "choices": {
+        "a": "is a minimal superkey",
+        "b": "is always the first field in each table",
+        "c": "must be numeric",
+        "d": "must be unique"
+      },
+      "answer": "D",
+      "explanation": "A primary key uniquely identifies each record in a table, so it must always contain unique, non-null values."
+    },
+    {
+      "id": 19,
+      "question": "A table can be logically connected to another table by defining a ____.",
+      "choices": {
+        "a": "hyperlink",
+        "b": "common attribute",
+        "c": "primary key",
+        "d": "logic key"
+      },
+      "answer": "B",
+      "explanation": "Tables are typically linked by defining a common attribute, usually implemented as a foreign key referencing a primary key in another table."
+    },
+    {
+      "id": 20,
+      "question": "A relational operator that allows for the combination of information from two or more tables is known as the ____ operator.",
+      "choices": {
+        "a": "SELECT",
+        "b": "PROJECT",
+        "c": "JOIN",
+        "d": "DIFFERENCE"
+      },
+      "answer": "C",
+      "explanation": "The JOIN operator is used to combine rows from two or more tables based on related columns, thereby enabling the integration of data from multiple sources."
+    },
+    {
+      "id": 21,
+      "question": "Which of the following statements concerning the primary key is true?",
+      "choices": {
+        "a": "All primary key entries are unique.",
+        "b": "The primary key may be null.",
+        "c": "The primary key is not required for all tables.",
+        "d": "The primary key data do not have to be unique."
+      },
+      "answer": "A",
+      "explanation": "Since the primary key uniquely identifies each record in a table, all its values must be unique and non-null."
+    },
+    {
+      "id": 22,
+      "question": "We can describe a link by observing that ____.",
+      "choices": {
+        "a": "a primary key of one table appears again as a primary key in a related table",
+        "b": "a foreign key of one table appears again as a foreign key in a related table",
+        "c": "a primary key of one table appears again as a foreign key in a related table",
+        "d": "a foreign key of one table appears again as a surrogate key in a related table"
+      },
+      "answer": "C",
+      "explanation": "A link between tables is established when a primary key from one table is used as a foreign key in another, thereby ensuring referential integrity between the related tables."
+    },
+    {
+      "id": 23,
+      "question": "When designing a new database, it is a good idea to ____.",
+      "choices": {
+        "a": "minimize data redundancy",
+        "b": "include redundant fields",
+        "c": "include a common field in all tables",
+        "d": "use composite keys"
+      },
+      "answer": "A",
+      "explanation": "Minimizing redundancy helps to avoid data anomalies and inconsistencies, leading to a more maintainable and efficient database design."
+    },
+    {
+      "id": 24,
+      "question": "An attribute (or combination of attributes) that uniquely identifies each entity in a table is called a ____.",
+      "choices": {
+        "a": "superkey",
+        "b": "foreign key",
+        "c": "master key",
+        "d": "secondary key"
+      },
+      "answer": "A",
+      "explanation": "A superkey is any set of attributes that can uniquely identify a record in a table. In this context, the term 'superkey' describes the attribute or combination of attributes used as a unique identifier."
+    },
+    {
+      "id": 25,
+      "question": "A foreign key must ____.",
+      "choices": {
+        "a": "be numeric",
+        "b": "be unique",
+        "c": "be defined in all tables within the database",
+        "d": "match the value of a primary key in a related table"
+      },
+      "answer": "D",
+      "explanation": "A foreign key creates a relationship between two tables by linking a column from one table to the primary key of another. This enforces referential integrity."
+    },
+    {
+      "id": 26,
+      "question": "The ERD is used to graphically represent the ____ database model.",
+      "choices": {
+        "a": "condensed",
+        "b": "physical",
+        "c": "logical",
+        "d": "conceptual"
+      },
+      "answer": "D",
+      "explanation": "ER diagrams illustrate the conceptual model of a database by showing entities, relationships, and attributes without including implementation details."
+    },
+    {
+      "id": 27,
+      "question": "A derived attribute ____.",
+      "choices": {
+        "a": "must be stored physically within the database",
+        "b": "need not be physically stored within the database",
+        "c": "has many values",
+        "d": "must be based on the value of three or more attributes"
+      },
+      "answer": "B",
+      "explanation": "Derived attributes are calculated from other attributes. They do not need to be stored physically because they can be generated when needed."
+    },
+    {
+      "id": 28,
+      "question": "A relationship is an association between ____.",
+      "choices": {
+        "a": "objects",
+        "b": "entities",
+        "c": "databases",
+        "d": "fields"
+      },
+      "answer": "B",
+      "explanation": "In the context of an ER diagram, a relationship describes how entities are related or connected to one another."
+    },
+    {
+      "id": 29,
+      "question": "A ____ key is a key that consists of more than one attribute.",
+      "choices": {
+        "a": "primary",
+        "b": "foreign",
+        "c": "composite",
+        "d": "domain"
+      },
+      "answer": "C",
+      "explanation": "A composite key is made up of two or more attributes that together uniquely identify a record in a table."
+    },
+    {
+      "id": 30,
+      "question": "A ____ attribute is one that cannot be subdivided.",
+      "choices": {
+        "a": "composite",
+        "b": "atomic",
+        "c": "binary-valued",
+        "d": "multivalued"
+      },
+      "answer": "B",
+      "explanation": "An atomic attribute is indivisible; it contains a single, discrete value that cannot be broken down further."
+    },
+    {
+      "id": 31,
+      "question": "If an entity can exist apart from one or more related entities, it is said to be ____-independent.",
+      "choices": {
+        "a": "existence",
+        "b": "relationship",
+        "c": "business",
+        "d": "weak"
+      },
+      "answer": "A",
+      "explanation": "An entity that does not require a relationship with any other entity to exist is considered existence-independent."
+    },
+    {
+      "id": 32,
+      "question": "A ____ relationship exists when three entities are associated.",
+      "choices": {
+        "a": "unary",
+        "b": "binary",
+        "c": "ternary",
+        "d": "weak"
+      },
+      "answer": "C",
+      "explanation": "A ternary relationship involves three entities simultaneously. This type of relationship is used when the association cannot be decomposed into simpler binary relationships."
+    },
+    {
+      "id": 33,
+      "question": "The set of possible values for an attribute is a ____.",
+      "choices": {
+        "a": "domain",
+        "b": "range",
+        "c": "set",
+        "d": "key"
+      },
+      "answer": "A",
+      "explanation": "An attribute’s domain is the complete collection of all possible values that the attribute can legitimately assume."
+    },
+    {
+      "id": 34,
+      "question": "Which attribute(s) make up the primary key in the table definition: CLASS (CRS_CODE, CLASS_SECTION, CLASS_TIME, CLASS_ROOM, PROF_NUM)?",
+      "choices": {
+        "a": "CRS_CODE",
+        "b": "CLASS_SECTION",
+        "c": "CRS_CODE and CLASS_SECTION",
+        "d": "There is no primary key"
+      },
+      "answer": "C",
+      "explanation": "The combination of CRS_CODE and CLASS_SECTION uniquely identifies each row in the CLASS table, forming a composite primary key."
+    },
+    {
+      "id": 35,
+      "question": "A table that has all key attributes defined, has no repeating groups, and all its attributes are dependent on the primary key, is said to be in ____.",
+      "choices": {
+        "a": "1NF",
+        "b": "2NF",
+        "c": "3NF",
+        "d": "4NF"
+      },
+      "answer": "A",
+      "explanation": "A table that meets these conditions is in First Normal Form (1NF), which requires that each cell holds only a single, atomic value and there are no repeating groups."
+    },
+    {
+      "id": 36,
+      "question": "A table that is in 2NF and contains no transitive dependencies is said to be in ____.",
+      "choices": {
+        "a": "1NF",
+        "b": "2NF",
+        "c": "3NF",
+        "d": "4NF"
+      },
+      "answer": "C",
+      "explanation": "When a table in Second Normal Form (2NF) is further refined to remove transitive dependencies, it meets the requirements of Third Normal Form (3NF)."
+    },
+    {
+      "id": 37,
+      "question": "Data redundancy produces ____.",
+      "choices": {
+        "a": "slower lookups",
+        "b": "robust design",
+        "c": "efficient storage use",
+        "d": "data integrity problems"
+      },
+      "answer": "D",
+      "explanation": "Redundancy can lead to inconsistent updates and anomalies, thereby causing data integrity issues."
+    },
+    {
+      "id": 38,
+      "question": "Normalization works through a series of normal ____.",
+      "choices": {
+        "a": "schemas",
+        "b": "entities",
+        "c": "databases",
+        "d": "forms"
+      },
+      "answer": "D",
+      "explanation": "Normalization involves organizing data into defined normal forms (1NF, 2NF, 3NF, etc.) to eliminate redundancy and maintain data integrity."
+    },
+    {
+      "id": 39,
+      "question": "Dependencies based on only a part of a composite primary key are called ____ dependencies.",
+      "choices": {
+        "a": "primary",
+        "b": "partial",
+        "c": "incomplete",
+        "d": "composite"
+      },
+      "answer": "B",
+      "explanation": "A partial dependency occurs when a non-key attribute relies on only a part of a composite key; this violates Second Normal Form."
+    },
+    {
+      "id": 40,
+      "question": "Given the table EMP_PROJ (PROJ_NUM, EMP_NUM, PROJ_NAME, EMP_NAME, PROJ_START, HOURS), which of the following is a partial dependency?",
+      "images": ["d426_40.png"],
+      "choices": {
+        "a": "PROJ_NUM --> PROJ_NAME",
+        "b": "PROJ_NAME --> HOURS",
+        "c": "PROJ_NUM, EMP_NUM --> HOURS",
+        "d": "PROJ_NUM, EMP_NUM --> PROJ_NAME"
+      },
+      "answer": "A",
+      "explanation": ""
+    },
+    {
+      "id": 41,
+      "question": "A relation is not in 1NF if:",
+      "choices": {
+        "a": "it has multiple candidate keys",
+        "b": "all of the key attributes are defined",
+        "c": "there are repeating groups in the table",
+        "d": "all attributes are dependent on the primary key"
+      },
+      "answer": "C",
+      "explanation": "A relation violates First Normal Form (1NF) if it contains repeating groups or multi-valued attributes in a single field."
+    },
+    {
+      "id": 42,
+      "question": "The SQL command that lets you insert data into a table, one row at a time, is ____.",
+      "choices": {
+        "a": "INSERT",
+        "b": "SELECT",
+        "c": "COMMIT",
+        "d": "UPDATE"
+      },
+      "answer": "A",
+      "explanation": "The INSERT command is used for adding new rows one at a time into a database table."
+    },
+    {
+      "id": 43,
+      "question": "The SQL command that enables you to make changes in the data is ____.",
+      "choices": {
+        "a": "INSERT",
+        "b": "SELECT",
+        "c": "COMMIT",
+        "d": "UPDATE"
+      },
+      "answer": "D",
+      "explanation": "UPDATE is used to modify existing records in a table according to specified conditions."
+    },
+    {
+      "id": 44,
+      "question": "To list all the contents of the PRODUCT table, you would use ____.",
+      "choices": {
+        "a": "LIST * FROM PRODUCT;",
+        "b": "SELECT * FROM PRODUCT;",
+        "c": "DISPLAY * FROM PRODUCT;",
+        "d": "SELECT ALL FROM PRODUCT;"
+      },
+      "answer": "B",
+      "explanation": "SELECT * FROM PRODUCT; retrieves every row and column from the PRODUCT table."
+    },
+    {
+      "id": 45,
+      "question": "Which command would you use when making corrections to the PRODUCT table?",
+      "choices": {
+        "a": "CHANGE PRODUCT SET P_INDATE = '01/18/2004' WHERE P_CODE = '13-Q2/P2';",
+        "b": "ROLLBACK PRODUCT SET P_INDATE = '01/18/2004' WHERE P_CODE = '13-Q2/P2';",
+        "c": "EDIT PRODUCT SET P_INDATE = '01/18/2004' WHERE P_CODE = '13-Q2/P2';",
+        "d": "UPDATE PRODUCT SET P_INDATE = '01/18/2004' WHERE P_CODE = '13-Q2/P2';"
+      },
+      "answer": "D",
+      "explanation": "The UPDATE command is used to modify existing data. In this case, it corrects the P_INDATE field for the specified product."
+    },
+    {
+      "id": 46,
+      "question": "Which command would be used to delete the table row where the P_Code = '2238/QPD'?",
+      "choices": {
+        "a": "DELETE FROM PRODUCT WHERE P_CODE = '2238/QPD';",
+        "b": "REMOVE FROM PRODUCT WHERE P_CODE = '2238/QPD';",
+        "c": "ERASE FROM PRODUCT WHERE P_CODE = '2238/QPD';",
+        "d": "ROLLBACK FROM PRODUCT WHERE P_CODE = '2238/QPD';"
+      },
+      "answer": "A",
+      "explanation": "DELETE FROM PRODUCT WHERE P_CODE = '2238/QPD'; removes the row that meets the condition from the PRODUCT table."
+    },
+    {
+      "id": 47,
+      "question": "Which command is used to select partial table contents?",
+      "choices": {
+        "a": "SELECT <column(s)> FROM <Table name> WHERE <Item>;",
+        "b": "LIST <column(s)> FROM <Table name> WHERE <Conditions>;",
+        "c": "SELECT <column(s)> FROM <Table name> WHERE <Conditions>;",
+        "d": "LIST <column(s)> FROM <Table name> WHERE <Item>;"
+      },
+      "answer": "C",
+      "explanation": "The SELECT statement with a WHERE clause is used to choose specific columns and filter rows based on conditions."
+    },
+    {
+      "id": 48,
+      "question": "Which query will output the table contents when the value of V_CODE is less than or equal to 21344?",
+      "choices": {
+        "a": "SELECT P_DESCRIPT, P_INDATE, P_PRICE, V_CODE FROM PRODUCT WHERE V_CODE <> 21344;",
+        "b": "SELECT P_DESCRIPT, P_INDATE, P_PRICE, V_CODE FROM PRODUCT WHERE V_CODE <=21344;",
+        "c": "SELECT P_DESCRIPT, P_INDATE, P_PRICE, V_CODE FROM PRODUCT WHERE V_CODE => 21344;",
+        "d": "SELECT P_DESCRIPT, P_INDATE, P_PRICE, V_CODE FROM PRODUCT WHERE V_CODE = 21344;"
+      },
+      "answer": "B",
+      "explanation": "The query uses the <= operator to select rows where V_CODE is less than or equal to 21344."
+    },
+    {
+      "id": 49,
+      "question": "Which query will list all the rows in which the inventory stock dates occur on or after January 20, 2006?",
+      "choices": {
+        "a": "SELECT P_DESCRIPT, P_QOH, P_MIN, P_PRICE, P_INDATE FROM PRODUCT WHERE P_INDICATE >= '01/20/2006'",
+        "b": "SELECT P_DESCRIPT, P_QOH, P_MIN, P_PRICE, P_INDATE FROM PRODUCT WHERE P_INDICATE >= #01/20/2004#",
+        "c": "SELECT P_DESCRIPT, P_QOH, P_MIN, P_PRICE, P_INDATE FROM PRODUCT WHERE P_INDICATE >= '20-JAN-2004'",
+        "d": "SELECT P_DESCRIPT, P_QOH, P_MIN, P_PRICE, P_INDATE FROM PRODUCT WHERE P_INDICATE >= {01-20-2004}"
+      },
+      "answer": "A",
+      "explanation": "The query filters rows using a correctly formatted date literal so that only records with stock dates on or after January 20, 2006 are returned."
+    },
+    {
+      "id": 50,
+      "question": "What is the SQL syntax requirement to list the table contents for either V_CODE = 21344 or V_CODE = 24288?",
+      "choices": {
+        "a": "SELECT P_DESCRIPT, P_INDATE, P_PRICE, V_CODE FROM PRODUCT WHERE V_CODE = 21344 OR V_CODE <= 24288",
+        "b": "SELECT P_DESCRIPT, P_INDATE, P_PRICE, V_CODE FROM PRODUCT WHERE V_CODE = 21344 OR V_CODE => 24288",
+        "c": "SELECT P_DESCRIPT, P_INDATE, P_PRICE, V_CODE FROM PRODUCT WHERE V_CODE = 21344 OR V_CODE > 24288",
+        "d": "SELECT P_DESCRIPT, P_INDATE, P_PRICE, V_CODE FROM PRODUCT WHERE V_CODE = 21344 OR V_CODE = 24288"
+      },
+      "answer": "D",
+      "explanation": "The query uses two equality conditions joined by OR to select records where V_CODE is either 21344 or 24288."
+    },
+    {
+      "id": 51,
+      "question": "What is the command to join the P_DESCRIPT and P_PRICE fields from the PRODUCT table and the V_NAME, V_AREACODE, V_PHONE, and V_CONTACT fields from the VENDOR table where the value of V_CODE match?",
+      "choices": {
+        "a": "SELECT P_DESCRIPT, P_PRICE, V_NAME, V_CONTACT, V_AREACODE, V_PHONE FROM PRODUCT, VENDOR WHERE PRODUCT.V_CODE <> VENDOR.V_CODE;",
+        "b": "SELECT P_DESCRIPT, P_PRICE, V_NAME, V_CONTACT, V_AREACODE, V_PHONE FROM PRODUCT, VENDOR WHERE PRODUCT.V_CODE = VENDOR.V_CODE;",
+        "c": "SELECT P_DESCRIPT, P_PRICE, V_NAME, V_CONTACT, V_AREACODE, V_PHONE FROM PRODUCT, VENDOR WHERE PRODUCT.V_CODE <= VENDOR.V_CODE;",
+        "d": "SELECT P_DESCRIPT, P_PRICE, V_NAME, V_CONTACT, V_AREACODE, V_PHONE FROM PRODUCT, VENDOR WHERE PRODUCT.V_CODE => VENDOR.V_CODE;"
+      },
+      "answer": "B",
+      "explanation": "This JOIN query retrieves data from two tables by matching the V_CODE column in both, which links products to their corresponding vendor information."
+    },
+    {
+      "id": 52,
+      "question": "SQL allows the use of special operators in conjunction with the WHERE clause. A special operator used to check for similar character strings is ____.",
+      "choices": {
+        "a": "BETWEEN",
+        "b": "IS NULL",
+        "c": "LIKE",
+        "d": "IN"
+      },
+      "answer": "C",
+      "explanation": "The LIKE operator is used to compare text with a pattern that may include wildcards, making it useful for string matching."
+    },
+    {
+      "id": 53,
+      "question": "A table can be deleted from the database by using the ____ command.",
+      "choices": {
+        "a": "DROP",
+        "b": "DELETE",
+        "c": "MODIFY",
+        "d": "ERASE"
+      },
+      "answer": "A",
+      "explanation": "The DROP command removes an entire table (including its data) from the database permanently."
+    },
+    {
+      "id": 54,
+      "question": "In the SQL command 'UPDATE tablename ***** [WHERE conditionlist];', what command replaces the *****?",
+      "choices": {
+        "a": "SET columnname = expression",
+        "b": "columnname = expression",
+        "c": "expression = columnname",
+        "d": "LET columnname = expression"
+      },
+      "answer": "A",
+      "explanation": "The SET clause in an UPDATE statement defines the new value(s) for one or more columns. It specifies which column should be updated and what value it should be given."
+    },
+    {
+      "id": 55,
+      "question": "A ____ join returns rows with matching values and includes all rows from both tables (T1 and T2) with unmatched values.",
+      "choices": {
+        "a": "natural",
+        "b": "cross",
+        "c": "full outer",
+        "d": "left outer"
+      },
+      "answer": "C",
+      "explanation": "A full outer join returns all rows from both tables, pairing rows that match and filling in NULLs for unmatched rows."
+    },
+    {
+      "id": 56,
+      "question": "During which step in the extract, transform, load (ETL) process are raw data sets aggregated?",
+      "choices": {
+        "a": "Transformation",
+        "b": "Extraction",
+        "c": "Loading",
+        "d": "Denormalization"
+      },
+      "answer": "A",
+      "explanation": "The Transformation stage in ETL involves aggregating, cleansing, and converting the raw extracted data into a format suitable for analysis before it is loaded into the data warehouse."
+    },
+    {
+      "id": 57,
+      "question": "Which is an important issue associated with the loading component of extract, transform, load (ETL)?",
+      "choices": {
+        "a": "Mapping keys from one system to another",
+        "b": "Monitor refreshing volume and frequency",
+        "c": "Determining the content of the data",
+        "d": "Denormalizing and renormalizing data"
+      },
+      "answer": "B",
+      "explanation": "Monitoring the volume and frequency during the Loading phase is crucial to ensure the data is loaded in a timely manner without overloading the system."
+    },
+    {
+      "id": 58,
+      "question": "A database includes the table shown above where each teacher is associated with exactly one campus. The address in the table is the address for the campus where the teacher teaches. What change would you need to make to normalize the database to the third normal form (3NF)?",
+      "images": ["d426_58.png"],
+      "choices": {
+        "a": "Combine the FirstName and LastName columns into a single column.",
+        "b": "Combine the Campus, Address, City, State, Country, and PostalCode columns into a single column.",
+        "c": "Create a separate table for campus address information. Use the Campus as the primary key. Add a TeacherID column to the table and relate it to the Teacher ID column in the Teachers table.",
+        "d": "Create a separate table for campus address information. Use Campus as the primary key for the table. Create a foreign key in the Teachers table that relates teacher to the campus."
+      },
+      "answer": "D",
+      "explanation": ""
+    },
+    {
+      "id": 59,
+      "question": "Which statement will remove all rows from the Materials table that have a Status value of ‘Obsolete’ but do not have a value for the VendorID column?",
+      "choices": {
+        "a": "DELETE Materials WHERE Status = ‘Obsolete’ OR VendorID IS NULL",
+        "b": "DELETE FROM Materials WHERE Status = ‘Obsolete’ AND VendorID IS NULL",
+        "c": "DELETE MaterialID, Description, Status, VendorID FROM Materials WHERE Status = ‘Obsolete’ AND VendorID IS NULL",
+        "d": "DELETE FROM Materials WHERE Status = ‘Obsolete’ WHERE VendorID IS NULL"
+      },
+      "answer": "B",
+      "explanation": "This DELETE statement uses the AND operator to ensure that only rows where the Status is 'Obsolete' and the VendorID is null are removed."
+    },
+    {
+      "id": 60,
+      "question": "The TestScores table is shown in the exhibit. Each student has a unique StudentID that references the Students table, a specific test can be taken more than once, each instructor has a unique InstructorID that references the Instructors table, each student may take multiple tests on the same date, and each student may take tests on multiple dates. What column or columns should you use for the primary key?",
+      "images": ["d426_60.png"],
+      "choices": {
+        "a": "StudentID, Date",
+        "b": "StudentID, Test, Date, InstructorID",
+        "c": "StudentID, Test, and Date",
+        "d": "Test"
+      },
+      "answer": "C",
+      "explanation": ""
+    },
+    {
+      "id": 61,
+      "question": "You are creating a relational database to store information about instructors and the courses that each instructor teaches. Each course is taught by a single instructor. You have created an Instructor table and a Course table as shown. You need to create a relationship between the Instructor table and the Course table and keep duplicate data to a minimum. What should you do?",
+      "images": ["d426_61.png"],
+      "choices": {
+        "a": "Create a new column in the Instructor table.",
+        "b": "Create new columns in the Instructors table for each course taught.",
+        "c": "Create a new table that includes two columns.",
+        "d": "Create a new column in the Course table"
+      },
+      "answer": "D",
+      "explanation": ""
+    },
+    {
+      "id": 62,
+      "question": "Which of the following is structured data?",
+      "choices": {
+        "a": "Images",
+        "b": "Email Attachments",
+        "c": "Records in a database",
+        "d": "Audio/Video"
+      },
+      "answer": "C",
+      "explanation": "Structured data is organized into a pre-defined model such as tables or records in a database, which allows for easier storage, query, and analysis."
+    },
+    {
+      "id": 63,
+      "question": "Which kind of relationship does the diagram depict where agents at the NWREA may be assigned as a mentor to zero or more other agents, but each agent being mentored is mentored by only one NWREA agent?",
+      "images": ["d426_63.png"],
+      "choices": {
+        "a": "Unary one-to-many",
+        "b": "Binary many-to-many",
+        "c": "Unary many-to-many",
+        "d": "Binary one-to-many"
+      },
+      "answer": "A",
+      "explanation": ""
+    },
+    {
+      "id": 64,
+      "question": "Which kind of relationship does the diagram depict where agents at the NWREA are assigned as a mentor to one other agent, each mentor can only work with one agent at a time, and each agent is only mentored by one agent, though being a mentor is not required?",
+      "images": ["d426_64.png"],
+      "choices": {
+        "a": "Unary one-to-many",
+        "b": "Binary many-to-many",
+        "c": "Unary one-to-one",
+        "d": "Binary one-to-many"
+      },
+      "answer": "C",
+      "explanation": ""
+    },
+    {
+      "id": 65,
+      "question": "What is the modality of appointment in the given 'schedules' table?",
+      "images": ["d426_65.png"],
+      "choices": {
+        "a": "At least one",
+        "b": "Dependent on the quantity",
+        "c": "Two",
+        "d": "Two or more"
+      },
+      "answer": "A",
+      "explanation": ""
+    },
+    {
+      "id": 66,
+      "question": "What form is the following table in? (The table with Registration ID, Registration Date, Student ID, and repeating Course fields)",
+      "images": ["d426_66.png"],
+      "choices": {
+        "a": "Unnormalized",
+        "b": "First normal form",
+        "c": "Second normal form",
+        "d": "Third normal form"
+      },
+      "answer": "A",
+      "explanation": ""
+    },
+    {
+      "id": 67,
+      "question": "What form is the table shown (with Registration Volunteer, Name, Address, and Activity columns) in?",
+      "images": ["d426_67.png"],
+      "choices": {
+        "a": "Unnormalized",
+        "b": "First normal form",
+        "c": "Second normal form",
+        "d": "Third normal form"
+      },
+      "answer": "A",
+      "explanation": ""
+    },
+    {
+      "id": 68,
+      "question": "What form is the table (with activity details and coordinator information) in?",
+      "images": ["d426_68.png"],
+      "choices": {
+        "a": "Unnormalized",
+        "b": "First normal form",
+        "c": "Second normal form",
+        "d": "Third normal form"
+      },
+      "answer": "C",
+      "explanation": ""
+    },
+    {
+      "id": 69,
+      "question": "What form is the table (with invoice details, items, etc.) in?",
+      "images": ["d426_69.png"],
+      "choices": {
+        "a": "Unnormalized",
+        "b": "First normal form",
+        "c": "Second normal form",
+        "d": "Third normal form"
+      },
+      "answer": "B",
+      "explanation": ""
+    }
+  ]
+}

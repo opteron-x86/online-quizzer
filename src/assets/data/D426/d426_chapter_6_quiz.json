@@ -1,0 +1,307 @@
+{
+    "testName": "MySQL Architecture, Cloud & Distributed Databases - Chapter 6 Test",
+    "instructions": "Select the best answer that completes the statement or answers the question based on Chapter 6.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "Which of the following correctly lists the four primary layers of MySQL architecture?",
+        "choices": {
+          "a": "Query Processor, Storage Engine, File System, Tools",
+          "b": "Tools, Query Processor, Storage Engine, File System",
+          "c": "Storage Engine, File System, Buffer Manager, Cache Manager",
+          "d": "Tools, Storage Engine, Cache Manager, Operating System"
+        },
+        "answer": "b",
+        "explanation": "MySQL components are organized in four layers: Tools, Query Processor, Storage Engine, and File System."
+      },
+      {
+        "id": 2,
+        "question": "Which layer interacts directly with database users and administrators and includes components like MySQL Workbench, Connectors, and the Command-Line Client?",
+        "choices": {
+          "a": "Query Processor",
+          "b": "Storage Engine",
+          "c": "Tools",
+          "d": "File System"
+        },
+        "answer": "c",
+        "explanation": "The Tools layer is the front end for users and administrators and includes utilities like Workbench, Connectors/APIs, and the Command-Line Client."
+      },
+      {
+        "id": 3,
+        "question": "Which MySQL layer is responsible for managing connections and compiling SQL queries into an execution plan?",
+        "choices": {
+          "a": "File System",
+          "b": "Query Processor",
+          "c": "Tools",
+          "d": "Storage Engine"
+        },
+        "answer": "b",
+        "explanation": "The Query Processor manages user connections, parses and optimizes SQL queries, and generates execution plans."
+      },
+      {
+        "id": 4,
+        "question": "The Storage Engine layer is mainly responsible for:",
+        "choices": {
+          "a": "Interfacing with user applications via Workbench",
+          "b": "Compiling queries into execution plans",
+          "c": "Executing query instructions, managing indexes, and interacting with the file system",
+          "d": "Storing log files and the data dictionary"
+        },
+        "answer": "c",
+        "explanation": "The Storage Engine (or Storage Manager) executes the low-level instructions, manages indexes, and communicates with the file system."
+      },
+      {
+        "id": 5,
+        "question": "Which layer in MySQL architecture provides access to physical files that store user data, log files, and the data dictionary?",
+        "choices": {
+          "a": "Query Processor",
+          "b": "Storage Engine",
+          "c": "Tools",
+          "d": "File System"
+        },
+        "answer": "d",
+        "explanation": "The File System layer is responsible for managing data stored on disk, including user data, log files, and the catalog (data dictionary)."
+      },
+      {
+        "id": 6,
+        "question": "The buffer manager in the Storage Engine typically uses which algorithm to select the block to be replaced when more memory is needed?",
+        "choices": {
+          "a": "Least Recently Used (LRU)",
+          "b": "First In, First Out (FIFO)",
+          "c": "Random Replacement",
+          "d": "Most Recently Used (MRU)"
+        },
+        "answer": "a",
+        "explanation": "The LRU algorithm is used by the buffer manager to discard the least recently accessed data block."
+      },
+      {
+        "id": 7,
+        "question": "What does the cache manager in the Query Processor layer do?",
+        "choices": {
+          "a": "It stores reusable execution plans and query results in main memory",
+          "b": "It manages locks during transaction processing",
+          "c": "It writes changes to disk during updates",
+          "d": "It scans table rows for query filtering"
+        },
+        "answer": "a",
+        "explanation": "The cache manager stores execution plans and sometimes query results so that repeated queries can execute faster."
+      },
+      {
+        "id": 8,
+        "question": "Which SQL statement is internally translated into queries against MySQL's data dictionary?",
+        "choices": {
+          "a": "SELECT * FROM Employee;",
+          "b": "CREATE DATABASE myDB;",
+          "c": "SHOW DATABASES;",
+          "d": "DROP TABLE Employee;"
+        },
+        "answer": "c",
+        "explanation": "SHOW statements, such as SHOW DATABASES, are internally implemented as SELECT queries against data dictionary tables."
+      },
+      {
+        "id": 9,
+        "question": "In a multi-tier cloud architecture, which tier is responsible for executing business logic?",
+        "choices": {
+          "a": "Top tier (client tier)",
+          "b": "Middle tier (application tier)",
+          "c": "Bottom tier (database/server tier)",
+          "d": "Network tier"
+        },
+        "answer": "b",
+        "explanation": "The middle tier, or application tier, executes business logic, communicating between clients and database servers."
+      },
+      {
+        "id": 10,
+        "question": "Which cloud service model provides complete applications that users can access via a web browser?",
+        "choices": {
+          "a": "Infrastructure as a Service (IaaS)",
+          "b": "Platform as a Service (PaaS)",
+          "c": "Software as a Service (SaaS)",
+          "d": "Database as a Service (DBaaS)"
+        },
+        "answer": "c",
+        "explanation": "SaaS delivers complete applications to end users, typically accessed using a web browser."
+      },
+      {
+        "id": 11,
+        "question": "Which cloud service model offers virtual machines and raw computing resources to customers?",
+        "choices": {
+          "a": "SaaS",
+          "b": "PaaS",
+          "c": "IaaS",
+          "d": "CaaS (Container as a Service)"
+        },
+        "answer": "c",
+        "explanation": "IaaS provides customers with raw computing resources, including virtual machines, storage, and networking."
+      },
+      {
+        "id": 12,
+        "question": "Which cloud service model provides tools and platforms for application development without requiring customers to manage underlying hardware?",
+        "choices": {
+          "a": "IaaS",
+          "b": "PaaS",
+          "c": "SaaS",
+          "d": "DaaS (Database as a Service)"
+        },
+        "answer": "b",
+        "explanation": "PaaS offers an environment with development tools and platforms for building applications without managing hardware."
+      },
+      {
+        "id": 13,
+        "question": "The CAP theorem states that a distributed database cannot simultaneously provide all three of the following properties. Which are they?",
+        "choices": {
+          "a": "Consistency, Availability, Scalability",
+          "b": "Consistency, Availability, Partition Tolerance",
+          "c": "Consistency, Accessibility, Performance",
+          "d": "Concurrency, Availability, Partition Tolerance"
+        },
+        "answer": "b",
+        "explanation": "The CAP theorem dictates that a distributed database cannot guarantee Consistency, Availability, and Partition Tolerance all at once."
+      },
+      {
+        "id": 14,
+        "question": "Which transaction protocol ensures that in a distributed transaction either all nodes commit or none do?",
+        "choices": {
+          "a": "Two-phase commit",
+          "b": "Two-phase locking",
+          "c": "Optimistic concurrency control",
+          "d": "Read committed isolation"
+        },
+        "answer": "a",
+        "explanation": "The two-phase commit protocol is used to ensure atomicity across multiple nodes in distributed transactions."
+      },
+      {
+        "id": 15,
+        "question": "What is a major disadvantage of distributed transactions compared to local transactions?",
+        "choices": {
+          "a": "They always improve query performance",
+          "b": "They do not require any locking mechanisms",
+          "c": "They involve high overhead due to coordination among multiple nodes",
+          "d": "They eliminate the need for data replication"
+        },
+        "answer": "c",
+        "explanation": "Distributed transactions require coordination (e.g., through two-phase commit), which adds overhead and can slow transaction processing."
+      },
+      {
+        "id": 16,
+        "question": "What does it mean when a distributed database is described as 'eventually consistent'?",
+        "choices": {
+          "a": "All updates are instantly visible on every node",
+          "b": "Updates are applied synchronously across nodes",
+          "c": "Nodes may temporarily show inconsistent data, but the database converges to consistency over time",
+          "d": "Data is always consistent, even during network partitions"
+        },
+        "answer": "c",
+        "explanation": "In an eventually consistent system, updates might not be immediately propagated to all nodes, but over time, all replicas converge to a consistent state."
+      },
+      {
+        "id": 17,
+        "question": "Which replication technique designates one node as primary and applies updates to other nodes afterward?",
+        "choices": {
+          "a": "Group replication",
+          "b": "Primary/secondary replication",
+          "c": "Asynchronous replication",
+          "d": "Peer-to-peer replication"
+        },
+        "answer": "b",
+        "explanation": "Primary/secondary replication designates a single node as the primary where updates occur first and then propagates changes to secondary nodes."
+      },
+      {
+        "id": 18,
+        "question": "In group replication, how are conflicts generally resolved when multiple nodes attempt to update data concurrently?",
+        "choices": {
+          "a": "The last update always wins",
+          "b": "Updates are ignored if a conflict is detected",
+          "c": "A conflict resolution algorithm (often 'first commit wins') determines which transaction commits",
+          "d": "All conflicting transactions are rolled back"
+        },
+        "answer": "c",
+        "explanation": "Group replication uses conflict resolution (often based on commit order) to decide which transaction to commit when concurrent updates occur."
+      },
+      {
+        "id": 19,
+        "question": "What is the primary goal of a data warehouse separate from operational databases?",
+        "choices": {
+          "a": "To enable real-time transactional processing",
+          "b": "To provide a historical, summarized, and integrated view of data for analytics",
+          "c": "To replace all operational systems",
+          "d": "To enforce strict normalization for all data"
+        },
+        "answer": "b",
+        "explanation": "Data warehouses are designed for decision support and analytics—they store historic, summarized, and integrated data without interfering with operational systems."
+      },
+      {
+        "id": 20,
+        "question": "What does the ETL process in data warehousing stand for?",
+        "choices": {
+          "a": "Extract, Transfer, Load",
+          "b": "Extract, Transform, Load",
+          "c": "Evaluate, Test, Launch",
+          "d": "Execute, Transform, Link"
+        },
+        "answer": "b",
+        "explanation": "ETL stands for Extract, Transform, Load—a process to extract data from source systems, transform it into a uniform structure, and load it into a data warehouse."
+      },
+      {
+        "id": 21,
+        "question": "Operational data is typically characterized by all of the following EXCEPT:",
+        "choices": {
+          "a": "High volatility",
+          "b": "Detailed, transactional records",
+          "c": "Summarized historical trends",
+          "d": "Data specific to daily business functions"
+        },
+        "answer": "c",
+        "explanation": "Operational databases store detailed, real-time data; summarized historical trends are typically found in analytic databases or data warehouses."
+      },
+      {
+        "id": 22,
+        "question": "Analytic data (or decision support data) is usually:",
+        "choices": {
+          "a": "Highly volatile and detailed",
+          "b": "Stable, summarized over time, and enterprise-wide",
+          "c": "Optimized for rapid transactional updates",
+          "d": "Limited to one business function only"
+        },
+        "answer": "b",
+        "explanation": "Analytic data is characterized by low volatility, summary-level information (often aggregated over time), and is integrated for enterprise-wide analysis."
+      },
+      {
+        "id": 23,
+        "question": "A data mart is best described as:",
+        "choices": {
+          "a": "A data warehouse designed to support all organizational functions",
+          "b": "A subset of a data warehouse tailored to a specific business area",
+          "c": "An operational database with high transaction rates",
+          "d": "A tool for performing ETL processes exclusively"
+        },
+        "answer": "b",
+        "explanation": "A data mart is a smaller, more focused data warehouse that supports the analytic needs of a specific business department or function."
+      },
+      {
+        "id": 24,
+        "question": "What is a key disadvantage of combining operational and analytic data in the same database?",
+        "choices": {
+          "a": "It simplifies data normalization",
+          "b": "Analytic queries may require complex joins over many third-normal-form tables, degrading performance",
+          "c": "It eliminates the need for a data warehouse",
+          "d": "It increases data redundancy, which always benefits query performance"
+        },
+        "answer": "b",
+        "explanation": "Operational databases are typically normalized (e.g., third normal form) to support transactions, but this structure is not optimal for analytic queries which often require complex joins and aggregations."
+      },
+      {
+        "id": 25,
+        "question": "What is the primary benefit of using a separate data warehouse rather than running analytic queries against an operational database?",
+        "choices": {
+          "a": "There is no need to extract data from source systems",
+          "b": "Operational systems no longer need to be backed up",
+          "c": "Analytic workloads do not interfere with day-to-day business operations and have a consistent reference time",
+          "d": "It increases real-time transaction processing speed"
+        },
+        "answer": "c",
+        "explanation": "A separate data warehouse isolates analytic processing from operational systems, ensuring that heavy analytical queries do not degrade transactional performance and that data has a consistent reference time."
+      }
+    ]
+  }
+  

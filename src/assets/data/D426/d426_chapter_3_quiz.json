@@ -1,0 +1,163 @@
+{
+    "testName": "SQL Special Operators, Functions, and Joins - Chapter 3 Test",
+    "instructions": "Select the best answer that completes the statement or answers the question based on Chapter 3.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "Which operator is used in a WHERE clause to check if a column value matches any value in a provided list?",
+        "choices": {
+          "a": "BETWEEN",
+          "b": "IN",
+          "c": "LIKE",
+          "d": "DISTINCT"
+        },
+        "answer": "B",
+        "explanation": "The IN operator determines if a value appears in a specified list, making it useful for multiple value comparisons."
+      },
+      {
+        "id": 2,
+        "question": "What does the SQL expression 'value BETWEEN a AND b' mean?",
+        "choices": {
+          "a": "value > a AND value < b",
+          "b": "value >= a AND value <= b",
+          "c": "value >= a OR value <= b",
+          "d": "value equals either a or b"
+        },
+        "answer": "B",
+        "explanation": "BETWEEN checks inclusively: it returns TRUE if value is greater than or equal to a and less than or equal to b."
+      },
+      {
+        "id": 3,
+        "question": "In SQL, which wildcard character with the LIKE operator represents any sequence of characters?",
+        "choices": {
+          "a": "%",
+          "b": "_",
+          "c": "*",
+          "d": "#"
+        },
+        "answer": "A",
+        "explanation": "The percent (%) sign matches any sequence (zero or more) of characters when used with the LIKE operator."
+      },
+      {
+        "id": 4,
+        "question": "What is the primary purpose of using the DISTINCT clause in a SELECT statement?",
+        "choices": {
+          "a": "To sort the result set",
+          "b": "To remove duplicate rows from the result set",
+          "c": "To filter rows based on a condition",
+          "d": "To join multiple tables"
+        },
+        "answer": "B",
+        "explanation": "DISTINCT ensures that only unique values are returned by filtering out duplicate rows in the result set."
+      },
+      {
+        "id": 5,
+        "question": "Which clause is used to sort the rows returned by a SELECT statement?",
+        "choices": {
+          "a": "GROUP BY",
+          "b": "ORDER BY",
+          "c": "HAVING",
+          "d": "LIMIT"
+        },
+        "answer": "B",
+        "explanation": "The ORDER BY clause specifies the sort order (ascending or descending) for the rows in the query result."
+      },
+      {
+        "id": 6,
+        "question": "Which SQL function returns the absolute value of a number?",
+        "choices": {
+          "a": "LOG()",
+          "b": "POW()",
+          "c": "ABS()",
+          "d": "ROUND()"
+        },
+        "answer": "C",
+        "explanation": "ABS() returns the non-negative value of a given number, regardless of its sign."
+      },
+      {
+        "id": 7,
+        "question": "What does the CONCAT(s1, s2, ...) function do in SQL?",
+        "choices": {
+          "a": "Returns a substring from the given string",
+          "b": "Converts the string to lowercase",
+          "c": "Concatenates two or more strings into one",
+          "d": "Replaces part of a string with another string"
+        },
+        "answer": "C",
+        "explanation": "CONCAT() combines the string arguments into one continuous string."
+      },
+      {
+        "id": 8,
+        "question": "Which function returns the current date in SQL?",
+        "choices": {
+          "a": "NOW()",
+          "b": "CURDATE()",
+          "c": "CURRENT_TIMESTAMP()",
+          "d": "GETDATE()"
+        },
+        "answer": "B",
+        "explanation": "CURDATE() returns the current date in the 'YYYY-MM-DD' format. (Note that some systems also support CURRENT_DATE.)"
+      },
+      {
+        "id": 9,
+        "question": "Which aggregate function counts the number of rows in a query result?",
+        "choices": {
+          "a": "SUM()",
+          "b": "COUNT()",
+          "c": "AVG()",
+          "d": "MIN()"
+        },
+        "answer": "B",
+        "explanation": "COUNT() tallies the total number of rows returned by a query, optionally filtered by a WHERE clause."
+      },
+      {
+        "id": 10,
+        "question": "What is the purpose of the GROUP BY clause in an SQL query?",
+        "choices": {
+          "a": "To sort the rows in the result set",
+          "b": "To filter rows based on a condition",
+          "c": "To aggregate rows sharing common values into groups",
+          "d": "To limit the number of rows returned"
+        },
+        "answer": "C",
+        "explanation": "GROUP BY is used to arrange data into groups based on one or more columns, allowing aggregate functions to be applied to each group."
+      },
+      {
+        "id": 11,
+        "question": "When used together with GROUP BY, what does the HAVING clause do?",
+        "choices": {
+          "a": "It sorts the groups",
+          "b": "It filters groups based on an aggregate condition",
+          "c": "It specifies the grouping columns",
+          "d": "It limits the overall number of rows returned"
+        },
+        "answer": "B",
+        "explanation": "The HAVING clause filters the groups created by the GROUP BY clause by applying conditions based on aggregate functions."
+      },
+      {
+        "id": 12,
+        "question": "In an inner join between two tables, which rows are included in the result?",
+        "choices": {
+          "a": "Only rows that exist in both tables with matching join column values",
+          "b": "All rows from the left table along with any matching rows from the right table",
+          "c": "All rows from both tables regardless of matches",
+          "d": "Rows from either table that meet the join condition"
+        },
+        "answer": "A",
+        "explanation": "An inner join returns only those rows where the join condition is met in both tables."
+      },
+      {
+        "id": 13,
+        "question": "What is the purpose of using table prefixes and column aliases in join queries?",
+        "choices": {
+          "a": "To speed up query execution",
+          "b": "To avoid ambiguity when two tables have columns with the same name and to simplify result column names",
+          "c": "To filter rows from the join",
+          "d": "To automatically sort the result set"
+        },
+        "answer": "B",
+        "explanation": "Using prefixes (e.g., TableName.ColumnName) resolves ambiguity when columns share the same name in different tables. Aliases then simplify the displayed column names in the result set."
+      }
+    ]
+  }
+  

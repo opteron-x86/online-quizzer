@@ -1,0 +1,151 @@
+{
+    "testName": "Relational Databases and SQL - Chapter 2 Test",
+    "instructions": "Select the best answer that completes the statement or answers the question based on the chapter's content.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "Who published the relational model and in what year was it introduced?",
+        "choices": {
+          "a": "Michael Stonebraker in 1975",
+          "b": "E.F. Codd in 1970",
+          "c": "Charles Bachman in 1965",
+          "d": "Edgar F. Codd in 1980"
+        },
+        "answer": "B",
+        "explanation": "The relational model was published by E.F. Codd in 1970. Although commercial products emerged around 1980, the foundational work dates to 1970."
+      },
+      {
+        "id": 2,
+        "question": "Which three components make up any database model according to the chapter?",
+        "choices": {
+          "a": "Data structures, file organization, and access methods",
+          "b": "Data structures, operations, and rules governing valid data",
+          "c": "Tables, rows, and columns",
+          "d": "Records, fields, and databases"
+        },
+        "answer": "B",
+        "explanation": "A database model is defined by its data structures, the operations that manipulate those structures, and the rules that determine which data are valid."
+      },
+      {
+        "id": 3,
+        "question": "In the relational model, which term is equivalent to the mathematical 'tuple'?",
+        "choices": {
+          "a": "Row",
+          "b": "Column",
+          "c": "Table",
+          "d": "Field"
+        },
+        "answer": "A",
+        "explanation": "A tuple, being an ordered list of elements, is equivalent to a row in a relational database."
+      },
+      {
+        "id": 4,
+        "question": "Which relational algebra operation removes one or more columns from a table?",
+        "choices": {
+          "a": "Select",
+          "b": "Project",
+          "c": "Join",
+          "d": "Union"
+        },
+        "answer": "B",
+        "explanation": "The project operation is used to eliminate one or more columns (attributes) from the result, leaving a subset of the original columns."
+      },
+      {
+        "id": 5,
+        "question": "SQL is divided into several sublanguages. Which of the following is NOT one of them?",
+        "choices": {
+          "a": "Data Definition Language (DDL)",
+          "b": "Data Query Language (DQL)",
+          "c": "Data Manipulation Language (DML)",
+          "d": "Data Encryption Language (DEL)"
+        },
+        "answer": "D",
+        "explanation": "SQL includes DDL, DQL, DML, Data Control Language (DCL), and Transaction Language (DTL); there is no 'Data Encryption Language' in SQL."
+      },
+      {
+        "id": 6,
+        "question": "Which SQL statement is used to create a new database?",
+        "choices": {
+          "a": "CREATE DATABASE DatabaseName;",
+          "b": "NEW DATABASE DatabaseName;",
+          "c": "CREATE TABLE DatabaseName;",
+          "d": "ADD DATABASE DatabaseName;"
+        },
+        "answer": "A",
+        "explanation": "The CREATE DATABASE statement is used to create a new database in SQL."
+      },
+      {
+        "id": 7,
+        "question": "What is the primary purpose of the WHERE clause in a SELECT statement?",
+        "choices": {
+          "a": "To specify the table from which to select rows",
+          "b": "To filter rows based on specified conditions",
+          "c": "To define the columns to be retrieved",
+          "d": "To sort the result set"
+        },
+        "answer": "B",
+        "explanation": "The WHERE clause filters rows so that only those meeting the specified conditions are included in the query result."
+      },
+      {
+        "id": 8,
+        "question": "Which command is used to delete a table and all its data from a database?",
+        "choices": {
+          "a": "DROP TABLE TableName;",
+          "b": "DELETE TABLE TableName;",
+          "c": "REMOVE TABLE TableName;",
+          "d": "ERASE TABLE TableName;"
+        },
+        "answer": "A",
+        "explanation": "The DROP TABLE command deletes the specified table and all of its rows from the database."
+      },
+      {
+        "id": 9,
+        "question": "What is the function of the LIMIT clause in a SELECT statement?",
+        "choices": {
+          "a": "To order the results alphabetically",
+          "b": "To restrict the number of rows returned by the query",
+          "c": "To join two tables together",
+          "d": "To calculate aggregate values"
+        },
+        "answer": "B",
+        "explanation": "The LIMIT clause restricts the result set to a specified number of rows, which is useful when dealing with very large tables."
+      },
+      {
+        "id": 10,
+        "question": "Which MySQL data type is best suited for storing both date and time information?",
+        "choices": {
+          "a": "DATE",
+          "b": "TIME",
+          "c": "DATETIME",
+          "d": "TIMESTAMP"
+        },
+        "answer": "C",
+        "explanation": "The DATETIME data type stores both date and time values, making it ideal for recording the exact moment an event occurs."
+      },
+      {
+        "id": 11,
+        "question": "When evaluating an SQL expression, which operator typically has the highest precedence?",
+        "choices": {
+          "a": "Logical NOT (NOT)",
+          "b": "Arithmetic multiplication (*)",
+          "c": "Addition (+)",
+          "d": "Logical AND (AND)"
+        },
+        "answer": "B",
+        "explanation": "Arithmetic multiplication (*) has a higher precedence than addition, logical NOT, and logical AND in SQL expressions."
+      },
+      {
+        "id": 12,
+        "question": "Which relational rule ensures that no two rows in a table are identical?",
+        "choices": {
+          "a": "Unique primary key",
+          "b": "No duplicate rows",
+          "c": "Unique column names",
+          "d": "Foreign key constraints"
+        },
+        "answer": "B",
+        "explanation": "The rule that prevents duplicate rows guarantees that every row in a table is unique. This is a core aspect of the relational model."
+      }
+    ]
+  }
+  

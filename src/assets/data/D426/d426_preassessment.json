@@ -1,0 +1,727 @@
+{
+    "testName": "Pre-Assessment: Data Management - Foundations",
+    "instructions": "Identify the choice that best completes the statement or answers the question.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "Which requirement within large, complex databases ensures users have limited access to the database?",
+        "choices": {
+          "a": "Recovery",
+          "b": "Performance",
+          "c": "Authorization",
+          "d": "Confidentiality"
+        },
+        "answer": "C",
+        "explanation": "Authorization restricts user access so that only permitted users can access sensitive data in a database."
+      },
+      {
+        "id": 2,
+        "question": "Which design type specifies database requirements without regard to a specific database system?",
+        "choices": {
+          "a": "Physical design",
+          "b": "Conceptual design",
+          "c": "Logical design",
+          "d": "Abstract design"
+        },
+        "answer": "B",
+        "explanation": "Conceptual design focuses on high-level data requirements and relationships without considering implementation details or specific platforms."
+      },
+      {
+        "id": 3,
+        "question": "What characterizes the rules of relational databases?",
+        "choices": {
+          "a": "They are based on business policy and specific databases.",
+          "b": "They represent data volumes and rapidly changing data structures.",
+          "c": "They embody the theoretical foundation of the SQL language.",
+          "d": "They are logical constraints that ensure the data is valid."
+        },
+        "answer": "D",
+        "explanation": "Relational database rules such as entity integrity and referential integrity are logical constraints designed to maintain data validity and consistency."
+      },
+      {
+        "id": 4,
+        "question": "Which event will result in an error code and error description when using MySQL Server?",
+        "choices": {
+          "a": "When the server or updates are incorrectly installed",
+          "b": "When an SQL statement is entered to locate errors in the database",
+          "c": "When an SQL statement is syntactically incorrect",
+          "d": "When a Mac OS shortcut code is used on a Windows OS"
+        },
+        "answer": "C",
+        "explanation": "MySQL Server detects syntax errors in SQL statements and returns an error code along with a description when they occur."
+      },
+      {
+        "id": 5,
+        "question": "Which data type should be used to store whole integer values, such as age?",
+        "choices": {
+          "a": "NUM",
+          "b": "VARCHAR",
+          "c": "DATE",
+          "d": "INT"
+        },
+        "answer": "D",
+        "explanation": "The INT data type is best suited for storing whole integer values."
+      },
+      {
+        "id": 6,
+        "question": "Which text-based interface is included in the MySQL Server Download?",
+        "choices": {
+          "a": "MySQL Command-Line Client",
+          "b": "MySQL Workbench",
+          "c": "MySQL Enterprise",
+          "d": "MySQL Community"
+        },
+        "answer": "A",
+        "explanation": "MySQL Server comes with the MySQL Command-Line Client, a text-based interface for executing SQL commands."
+      },
+      {
+        "id": 7,
+        "question": "Which database system includes the World database during its installation?",
+        "choices": {
+          "a": "MySQL",
+          "b": "MongoDB",
+          "c": "Oracle",
+          "d": "PostgreSQL"
+        },
+        "answer": "A",
+        "explanation": "MySQL typically installs with the World sample database, which serves as an example dataset."
+      },
+      {
+        "id": 8,
+        "question": "What is the standardized language of relational database systems?",
+        "choices": {
+          "a": "Contextual Query Language",
+          "b": "Structured Query Language",
+          "c": "Select Query Language",
+          "d": "Object Query Language"
+        },
+        "answer": "B",
+        "explanation": "Structured Query Language (SQL) is the standard language for managing and querying relational databases."
+      },
+      {
+        "id": 9,
+        "question": "Which SQL sublanguage is used to manage database access?",
+        "choices": {
+          "a": "Data Definition Language (DDL)",
+          "b": "Data Query Language (DQL)",
+          "c": "Data Manipulation Language (DML)",
+          "d": "Data Control Language (DCL)"
+        },
+        "answer": "D",
+        "explanation": "Data Control Language (DCL) manages database access by controlling user permissions and security."
+      },
+      {
+        "id": 10,
+        "question": "Which SQL sublanguage is used to roll back database changes?",
+        "choices": {
+          "a": "Data Transaction Language (DTL)",
+          "b": "Data Manipulation Language (DML)",
+          "c": "Data Query Language (DQL)",
+          "d": "Data Control Language (DCL)"
+        },
+        "answer": "A",
+        "explanation": "Data Transaction Language (DTL) includes commands like ROLLBACK to manage transactions, allowing changes to be undone if necessary."
+      },
+      {
+        "id": 11,
+        "question": "Which format is used by the TIME data type in MySQL?",
+        "choices": {
+          "a": "YYYY-MM-DD",
+          "b": "hh:mm:ss",
+          "c": "hh:mm:ss YYYY-MM-DD",
+          "d": "mm/dd/yyyy"
+        },
+        "answer": "B",
+        "explanation": "The TIME data type in MySQL uses the 'hh:mm:ss' format to represent time values."
+      },
+      {
+        "id": 12,
+        "question": "Which MySQL operator is the last in the order of operator precedence?",
+        "choices": {
+          "a": "-",
+          "b": "OR",
+          "c": "NOT",
+          "d": "="
+        },
+        "answer": "B",
+        "explanation": "The OR operator is the last to be evaluated among the common operators in MySQL."
+      },
+      {
+        "id": 13,
+        "question": "Which operator is used to compare columns from the left and right tables in MySQL?",
+        "choices": {
+          "a": "<=",
+          "b": "+",
+          "c": "=",
+          "d": "*"
+        },
+        "answer": "C",
+        "explanation": "The equals sign (=) is used to compare column values from different tables, particularly in join conditions."
+      },
+      {
+        "id": 14,
+        "question": "Which type of join combines two tables without comparing columns?",
+        "choices": {
+          "a": "SELF",
+          "b": "EQUIJOIN",
+          "c": "OUTER",
+          "d": "CROSS"
+        },
+        "answer": "D",
+        "explanation": "A CROSS JOIN returns the Cartesian product of two tables by combining every row from the first table with every row from the second."
+      },
+      {
+        "id": 15,
+        "question": "Which type of join compares columns using only the = operator?",
+        "choices": {
+          "a": "SELF JOIN",
+          "b": "EQUIJOIN",
+          "c": "OUTER JOIN",
+          "d": "INNER JOIN"
+        },
+        "answer": "B",
+        "explanation": "An equijoin uses the equality operator (=) exclusively to match rows between two tables."
+      },
+      {
+        "id": 16,
+        "question": "Which type of join is demonstrated by the following query? SELECT Dog.Nickname, Kennel.Address FROM Dog, Kennel WHERE Dog.KennelID = Kennel.ID",
+        "choices": {
+          "a": "NON-EQUIJOIN",
+          "b": "SELF JOIN",
+          "c": "CROSS JOIN",
+          "d": "EQUIJOIN"
+        },
+        "answer": "D",
+        "explanation": "This query demonstrates an equijoin because it joins two tables using the equals (=) operator to match the Dog.KennelID with Kennel.ID."
+      },
+      {
+        "id": 17,
+        "question": "What is another name for a subquery?",
+        "choices": {
+          "a": "Outer query",
+          "b": "Nested query",
+          "c": "Correlated query",
+          "d": "Search query"
+        },
+        "answer": "B",
+        "explanation": "A subquery is also known as a nested query because it is embedded inside another SQL query."
+      },
+      {
+        "id": 18,
+        "question": "Which operator is used to compare against a list of values when determining a match in a WHERE clause?",
+        "choices": {
+          "a": "BETWEEN",
+          "b": "LIKE",
+          "c": "IN",
+          "d": "OR"
+        },
+        "answer": "C",
+        "explanation": "The IN operator enables comparison of a column value against a list of possible values."
+      },
+      {
+        "id": 19,
+        "question": "Which wildcard character is used to represent zero or more characters when searching for a specified pattern using a LIKE operator?",
+        "choices": {
+          "a": "%",
+          "b": "_",
+          "c": "<",
+          "d": ">"
+        },
+        "answer": "A",
+        "explanation": "The '%' wildcard represents zero or more characters in the context of a LIKE pattern search."
+      },
+      {
+        "id": 20,
+        "question": "Which function is considered an aggregating function in SQL?",
+        "choices": {
+          "a": "TRIM",
+          "b": "REPLACE",
+          "c": "MIN",
+          "d": "SUBSTRING"
+        },
+        "answer": "C",
+        "explanation": "MIN is an aggregate function that returns the smallest value in a set of values."
+      },
+      {
+        "id": 21,
+        "question": "Which clause or function is used with aggregate functions to produce summary rows?",
+        "choices": {
+          "a": "TRIM",
+          "b": "REPLACE",
+          "c": "ORDER BY",
+          "d": "GROUP BY"
+        },
+        "answer": "D",
+        "explanation": "GROUP BY groups rows that have the same values in specified columns so that aggregate functions can produce a summary for each group."
+      },
+      {
+        "id": 22,
+        "question": "Which type of join returns only the matching values when selecting rows from two or more tables?",
+        "choices": {
+          "a": "Full Join",
+          "b": "Outer Join",
+          "c": "Equijoin",
+          "d": "Inner Join"
+        },
+        "answer": "D",
+        "explanation": "An inner join returns only the rows that have matching values in all the joined tables."
+      },
+      {
+        "id": 23,
+        "question": "Which join type selects only matching left and right table rows?",
+        "choices": {
+          "a": "Full Join",
+          "b": "Left Join",
+          "c": "Right Join",
+          "d": "Inner Join"
+        },
+        "answer": "D",
+        "explanation": "An inner join is used to select only those rows with matching values in both the left and right tables."
+      },
+      {
+        "id": 24,
+        "question": "Which phrase refers to the view in which data is persisted and is automatically changed as the underlying data is changed?",
+        "choices": {
+          "a": "Virtual View",
+          "b": "Snapshot View",
+          "c": "Denormalized View",
+          "d": "Materialized View"
+        },
+        "answer": "A",
+        "explanation": "A virtual view provides an up-to-date window on the data stored in underlying tables as it changes, unlike a materialized view which is stored statically."
+      },
+      {
+        "id": 25,
+        "question": "Which SQL command uses the correct syntax to update the salary of an employee in the Employee table?",
+        "choices": {
+          "a": "CHANGE Employee Salary = 50000 WHERE ID = 1;",
+          "b": "UPDATE Employee SET Salary = 50000 WHERE ID = 1;",
+          "c": "ALTER Employee SET Salary = 50000 WHERE ID = 1;",
+          "d": "UPDATE Employee (Salary) = (50000) WHERE ID = 1;"
+        },
+        "answer": "B",
+        "explanation": "The UPDATE command along with SET and WHERE clauses is used to modify data in the Employee table."
+      },
+      {
+        "id": 26,
+        "question": "What describes elements such as column name and data type?",
+        "choices": {
+          "a": "Alter",
+          "b": "Table",
+          "c": "Metadata",
+          "d": "CRUD"
+        },
+        "answer": "C",
+        "explanation": "Metadata refers to the descriptive information about data, including the names, data types, and structures of tables."
+      },
+      {
+        "id": 27,
+        "question": "Which term identifies an ordered collection of elements enclosed in parenthesis in a tablespace?",
+        "choices": {
+          "a": "Cell",
+          "b": "Field",
+          "c": "Column",
+          "d": "Tuple"
+        },
+        "answer": "D",
+        "explanation": "A tuple is an ordered collection of values, which is equivalent to a row in a database table."
+      },
+      {
+        "id": 28,
+        "question": "Which SQL command uses the correct syntax to select the name and salary columns from the Employee table, where the salary is greater than 50000, and sort the results by salary in descending order?",
+        "choices": {
+          "a": "SELECT name, salary FROM Employee SORT BY salary DESC WHERE salary > 50000;",
+          "b": "SELECT name, salary FROM Employee WHERE salary > 50000 SORT BY salary DESC;",
+          "c": "SELECT name, salary FROM Employee WHERE salary > 50000 ORDER BY salary DESC;",
+          "d": "SELECT name, salary FROM Employee WHERE salary > 50000 SORT BY salary ASC;"
+        },
+        "answer": "C",
+        "explanation": "The syntax using SELECT, FROM, WHERE, and ORDER BY with the DESC keyword correctly sorts the rows in descending order by salary."
+      },
+      {
+        "id": 29,
+        "question": "Which INSERT statement demonstrates valid syntax in SQL?",
+        "choices": {
+          "a": "INSERT INTO table_name (column1, column2) SET value1, value2;",
+          "b": "INSERT INTO table_name VALUES (value1, value2);",
+          "c": "INSERT INTO table_name (column1, column2) VALUES (value1, value2);",
+          "d": "INSERT INTO table_name SET column1 = value1, column2 = value2;"
+        },
+        "answer": "C",
+        "explanation": "The standard SQL syntax for inserting data into specified columns is to list the columns and then the VALUES."
+      },
+      {
+        "id": 30,
+        "question": "Which UPDATE statement uses valid syntax in SQL?",
+        "choices": {
+          "a": "UPDATE table_name column_name= value1 WHERE condition",
+          "b": "UPDATE table_name SET column1 = value1, column2 = value2 WHERE condition;",
+          "c": "UPDATE SET column1 = value1, column2 = value2 WHERE condition IN table_name;",
+          "d": "UPDATE table_name SET column_name = value1"
+        },
+        "answer": "B",
+        "explanation": "The UPDATE statement must include the SET clause with column-value pairs followed by a WHERE clause to specify the rows to update."
+      },
+      {
+        "id": 31,
+        "question": "Which statement is used to remove data from temporary tables?",
+        "choices": {
+          "a": "DROP",
+          "b": "DELETE",
+          "c": "TRUNCATE",
+          "d": "ROLLBACK"
+        },
+        "answer": "C",
+        "explanation": "TRUNCATE is a DDL command that quickly removes all rows from a table and is frequently used with temporary tables."
+      },
+      {
+        "id": 32,
+        "question": "Which keyword is a DDL (data definition language) keyword in SQL?",
+        "choices": {
+          "a": "INSERT",
+          "b": "UPDATE",
+          "c": "DELETE",
+          "d": "CREATE"
+        },
+        "answer": "D",
+        "explanation": "CREATE is a DDL command used for defining new database objects such as tables, indexes, and views."
+      },
+      {
+        "id": 33,
+        "question": "Which property is enforced by a primary key field?",
+        "choices": {
+          "a": "Not Null",
+          "b": "Null",
+          "c": "Duplicate",
+          "d": "Numeric"
+        },
+        "answer": "A",
+        "explanation": "A primary key must have a value (i.e. not null) to ensure that every row in the table can be uniquely identified."
+      },
+      {
+        "id": 34,
+        "question": "Which property or function allows SQL to insert a field value?",
+        "choices": {
+          "a": "Composite",
+          "b": "Simple",
+          "c": "Auto-increment",
+          "d": "Numeric"
+        },
+        "answer": "C",
+        "explanation": "The auto-increment property automatically generates a unique value for a column, typically used for primary keys."
+      },
+      {
+        "id": 35,
+        "question": "Which property specifies an expression on one or more columns of a table?",
+        "choices": {
+          "a": "CHECK",
+          "b": "UNIQUE",
+          "c": "DEFAULT",
+          "d": "FOREIGN KEY"
+        },
+        "answer": "A",
+        "explanation": "The CHECK constraint enforces an expression that must evaluate to true for every row in a table."
+      },
+      {
+        "id": 36,
+        "question": "Which type of key is a single column in a table used to identify a row?",
+        "choices": {
+          "a": "Super key",
+          "b": "Simple primary key",
+          "c": "Foreign key",
+          "d": "Composite primary key"
+        },
+        "answer": "B",
+        "explanation": "A simple primary key consists of only one column that uniquely identifies each record in a table."
+      },
+      {
+        "id": 37,
+        "question": "Which type of key is often represented by parentheses to show multiple columns?",
+        "choices": {
+          "a": "Composite",
+          "b": "Simple",
+          "c": "Unique",
+          "d": "Foreign"
+        },
+        "answer": "A",
+        "explanation": "A composite key is made up of two or more columns; such keys are typically depicted with parentheses to show their composite nature."
+      },
+      {
+        "id": 38,
+        "question": "Which primary key characteristic means it includes information that is easy to type and store?",
+        "choices": {
+          "a": "Non-null",
+          "b": "Meaningless",
+          "c": "Stable",
+          "d": "Simple"
+        },
+        "answer": "D",
+        "explanation": "A simple primary key is ideally concise and easy to enter, helping reduce errors during data entry."
+      },
+      {
+        "id": 39,
+        "question": "Which part of a junction table in a relational database establishes a many-to-many relationship between two tables?",
+        "choices": {
+          "a": "Primary key",
+          "b": "Foreign key",
+          "c": "Composite key",
+          "d": "Candidate key"
+        },
+        "answer": "C",
+        "explanation": "A composite primary key in a junction table, typically made up of foreign keys from the related tables, establishes the many-to-many relationship."
+      },
+      {
+        "id": 40,
+        "question": "Which type of relationship is established by a foreign key in a relational database?",
+        "choices": {
+          "a": "Aggregation",
+          "b": "Composition",
+          "c": "One-to-many",
+          "d": "Many-to-many"
+        },
+        "answer": "C",
+        "explanation": "Foreign keys typically create a one-to-many relationship by linking a row in one table (the parent) to multiple rows in another (the child)."
+      },
+      {
+        "id": 41,
+        "question": "Which statements may be rejected when a foreign key constraint is specified?",
+        "choices": {
+          "a": "INSERT",
+          "b": "CHECK",
+          "c": "SELECT",
+          "d": "ORDER BY"
+        },
+        "answer": "A",
+        "explanation": "An INSERT that violates a foreign key constraint (e.g., references a non-existent primary key) will be rejected."
+      },
+      {
+        "id": 42,
+        "question": "Which key describes the unique columns in a table that do not contain a primary key?",
+        "choices": {
+          "a": "Foreign key",
+          "b": "Simple key",
+          "c": "Candidate key",
+          "d": "Composite key"
+        },
+        "answer": "C",
+        "explanation": "Candidate keys are columns or sets of columns that can uniquely identify a row even if they are not chosen as the primary key."
+      },
+      {
+        "id": 43,
+        "question": "Which index stores column values and row pointers in a hierarchy?",
+        "choices": {
+          "a": "Dense index",
+          "b": "Sparse index",
+          "c": "Multi-level index",
+          "d": "Secondary index"
+        },
+        "answer": "C",
+        "explanation": "A multi-level index organizes the index entries in a hierarchical manner to reduce the number of disk blocks that need to be searched."
+      },
+      {
+        "id": 44,
+        "question": "Which type of index refers to entries that are assigned to buckets?",
+        "choices": {
+          "a": "Bitmap index",
+          "b": "Logical index",
+          "c": "Hash index",
+          "d": "Secondary index"
+        },
+        "answer": "C",
+        "explanation": "A hash index uses a hash function to group index entries into buckets, improving the speed of retrieval."
+      },
+      {
+        "id": 45,
+        "question": "Which type of index is a grid of bits where each index row corresponds to a unique row in a table?",
+        "choices": {
+          "a": "Multi-level index",
+          "b": "Logical index",
+          "c": "Hash index",
+          "d": "Bitmap index"
+        },
+        "answer": "D",
+        "explanation": "Bitmap indexes use bit arrays (bitmaps) to quickly indicate the presence of a value in each row."
+      },
+      {
+        "id": 46,
+        "question": "Which type of development activity is used to convert an entity-relationship model (ERM) into tables, columns, and keys?",
+        "choices": {
+          "a": "Execution",
+          "b": "Physical design",
+          "c": "Logical design",
+          "d": "Analysis"
+        },
+        "answer": "C",
+        "explanation": "Logical design converts the conceptual ER model into a relational schema with tables, columns, and keys."
+      },
+      {
+        "id": 47,
+        "question": "Which term addresses columns of A being a subset of the columns of B, with A always depending on B?",
+        "choices": {
+          "a": "Third normal form",
+          "b": "Candidate key",
+          "c": "Trivial dependency",
+          "d": "Non-trivial dependency"
+        },
+        "answer": "D",
+        "explanation": "A non-trivial dependency indicates a meaningful dependency where the dependent attributes are not contained within the determinant, showing that A truly depends on B."
+      },
+      {
+        "id": 48,
+        "question": "Which term describes the process of denormalization?",
+        "choices": {
+          "a": "Merging",
+          "b": "Creation of a candidate key",
+          "c": "Evaluation of trivial dependency",
+          "d": "Normalization"
+        },
+        "answer": "A",
+        "explanation": "Denormalization typically involves merging tables to reduce the number of joins needed, thereby improving query performance at the cost of some redundancy."
+      },
+      {
+        "id": 49,
+        "question": "A database designer is working with a table that has a primary key and no duplicate rows. What can be concluded about the table?",
+        "choices": {
+          "a": "It is a Boyce-Codd table.",
+          "b": "It contains trivial dependency.",
+          "c": "The table contains a non-key column.",
+          "d": "It is a first normal form table."
+        },
+        "answer": "D",
+        "explanation": "A table that has a primary key, unique rows, and atomic column values meets the requirements of First Normal Form (1NF)."
+      },
+      {
+        "id": 50,
+        "question": "Which process eliminates redundancy by decomposing a table into two or more tables in a higher normal form?",
+        "choices": {
+          "a": "Merging",
+          "b": "Creation of a candidate key",
+          "c": "Evaluation of trivial dependency",
+          "d": "Normalization"
+        },
+        "answer": "D",
+        "explanation": "Normalization involves decomposing tables to reduce redundancy and dependency, thus improving data integrity."
+      },
+      {
+        "id": 51,
+        "question": "Which term describes the optimal normal form for frequent inserts, updates, and deletes of data?",
+        "choices": {
+          "a": "Boyce-Codd normal form",
+          "b": "Candidate key",
+          "c": "Trivial dependency",
+          "d": "Third normal form"
+        },
+        "answer": "D",
+        "explanation": "Third Normal Form (3NF) strikes a balance between reducing redundancy and maintaining efficient performance for DML operations."
+      },
+      {
+        "id": 52,
+        "question": "Which relationship is depicted in the following entity-relationship (ER) diagram?",
+        "choices": {
+          "a": "Ternary",
+          "b": "Many-to-many",
+          "c": "One-to-one",
+          "d": "One-to-many"
+        },
+        "answer": "A",
+        "explanation": "The diagram shows a relationship involving three entities simultaneously, which defines a ternary relationship."
+      },
+      {
+        "id": 53,
+        "question": "Which relationship or association exists between a supertype entity and its subtype entities?",
+        "choices": {
+          "a": "IsA relationship",
+          "b": "Weak entity",
+          "c": "Associative entity",
+          "d": "Unary relationship"
+        },
+        "answer": "A",
+        "explanation": "A supertype/subtype association is represented by an 'IsA' relationship, indicating that the subtypes are specific kinds of the supertype."
+      },
+      {
+        "id": 54,
+        "question": "Which symbol is used in an entity-relationship (ER) diagram for an entity?",
+        "choices": {
+          "a": "Diamond",
+          "b": "Square",
+          "c": "Circle",
+          "d": "Line"
+        },
+        "answer": "B",
+        "explanation": "Entities in ER diagrams are typically depicted as squares or rectangles."
+      },
+      {
+        "id": 55,
+        "question": "Which symbol is used in an entity-relationship (ER) diagram to indicate an attribute?",
+        "choices": {
+          "a": "Diamond",
+          "b": "Square",
+          "c": "Circle",
+          "d": "Line"
+        },
+        "answer": "C",
+        "explanation": "Attributes in ER diagrams are usually drawn as circles or ovals attached to an entity."
+      },
+      {
+        "id": 56,
+        "question": "What must be done before creating supertype and subtype entities?",
+        "choices": {
+          "a": "Identify entities.",
+          "b": "Document entities.",
+          "c": "Determine attribute maxima.",
+          "d": "Document cardinality."
+        },
+        "answer": "D",
+        "explanation": "Documenting cardinality is essential to understand how entities relate to one another before creating supertypes and subtypes."
+      },
+      {
+        "id": 57,
+        "question": "Which real-world object can be distinctly identified and grouped, such as all employees in a company?",
+        "choices": {
+          "a": "Entity-relationship (ER) diagram",
+          "b": "Glossary",
+          "c": "Entity",
+          "d": "Attribute"
+        },
+        "answer": "C",
+        "explanation": "An entity is a distinct object or concept that can be uniquely identified and grouped."
+      },
+      {
+        "id": 58,
+        "question": "Which item in an entity-relationship (ER) diagram follows the attribute name and is placed outside of parentheses?",
+        "choices": {
+          "a": "Weak entity",
+          "b": "Attribute maximum",
+          "c": "Attribute minimum",
+          "d": "Physical design"
+        },
+        "answer": "C",
+        "explanation": "The attribute minimum appears after the attribute name (often in parentheses) to indicate the minimum required occurrences for that attribute."
+      },
+      {
+        "id": 59,
+        "question": "Which strategy can be used to identify primary keys when investigating data relationships?",
+        "choices": {
+          "a": "Trend analysis",
+          "b": "Unique identifier analysis",
+          "c": "Hypothesis testing",
+          "d": "Visualization"
+        },
+        "answer": "B",
+        "explanation": "Unique identifier analysis involves examining which columns have unique values across rows, making them good candidates for primary keys."
+      },
+      {
+        "id": 60,
+        "question": "How should an entity relationship phrase be read to correctly understand how one entity relates to another entity in an entity-relationship diagram (ER diagram)?",
+        "choices": {
+          "a": "From top to bottom",
+          "b": "In the direction the entity box is facing",
+          "c": "In the direction the relationship verb is facing",
+          "d": "From left to right"
+        },
+        "answer": "C",
+        "explanation": "The phrase should be read in the direction the relationship verb is facing to correctly interpret the association between entities."
+      }
+    ]
+  }
+  

@@ -1,0 +1,307 @@
+{
+    "testName": "Database Storage and Indexing - Chapter 5 Test",
+    "instructions": "Select the best answer that completes the statement or answers the question based on Chapter 5’s content.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "Which of the following storage media is volatile?",
+        "choices": {
+          "a": "Main memory (RAM)",
+          "b": "Flash memory (SSD)",
+          "c": "Magnetic disk (HDD)",
+          "d": "Optical disk"
+        },
+        "answer": "A",
+        "explanation": "Main memory (RAM) is volatile, meaning its stored data is lost when power is disconnected, while flash memory and magnetic disks are nonvolatile."
+      },
+      {
+        "id": 2,
+        "question": "Which characteristic of storage media is measured by the time required to access the first byte of data?",
+        "choices": {
+          "a": "Transfer rate",
+          "b": "Access time",
+          "c": "Capacity",
+          "d": "Volatility"
+        },
+        "answer": "B",
+        "explanation": "Access time is the time required to locate and begin reading the first byte, whereas transfer rate is the speed of data read/writes after access is made."
+      },
+      {
+        "id": 3,
+        "question": "Among main memory, flash memory, and magnetic disk, which typically exhibits the highest transfer rate?",
+        "choices": {
+          "a": "Main memory (RAM)",
+          "b": "Flash memory (SSD)",
+          "c": "Magnetic disk (HDD)",
+          "d": "Optical disk"
+        },
+        "answer": "A",
+        "explanation": "Main memory is much faster than flash memory and magnetic disk in both access time and transfer rate."
+      },
+      {
+        "id": 4,
+        "question": "Arrange these storage media in order of increasing cost per gigabyte.",
+        "choices": {
+          "a": "Main memory < Flash memory < Magnetic disk",
+          "b": "Magnetic disk < Flash memory < Main memory",
+          "c": "Flash memory < Magnetic disk < Main memory",
+          "d": "Magnetic disk < Main memory < Flash memory"
+        },
+        "answer": "B",
+        "explanation": "Magnetic disk is the cheapest per gigabyte, flash memory is moderately priced, and main memory (RAM) is the most expensive."
+      },
+      {
+        "id": 5,
+        "question": "Modern magnetic disks commonly use a sector size of:",
+        "choices": {
+          "a": "256 bytes",
+          "b": "512 bytes",
+          "c": "4 kilobytes",
+          "d": "8 kilobytes"
+        },
+        "answer": "C",
+        "explanation": "While traditional disks used 512-byte sectors, newer magnetic disk formats often use 4-kilobyte sectors."
+      },
+      {
+        "id": 6,
+        "question": "Flash memory organizes data into units called pages. Typical flash page sizes range from:",
+        "choices": {
+          "a": "128 bytes to 512 bytes",
+          "b": "1 kilobyte to 2 kilobytes",
+          "c": "2 kilobytes to 16 kilobytes",
+          "d": "32 kilobytes to 64 kilobytes"
+        },
+        "answer": "C",
+        "explanation": "Flash memory pages typically range from 2 KB to 16 KB, which is the unit used internally for data transfers."
+      },
+      {
+        "id": 7,
+        "question": "Database administrators can specify a block size for transferring data between storage and memory. Typical block sizes range from:",
+        "choices": {
+          "a": "256 bytes to 1 kilobyte",
+          "b": "1 kilobyte to 8 kilobytes",
+          "c": "2 kilobytes to 64 kilobytes",
+          "d": "64 kilobytes to 1 megabyte"
+        },
+        "answer": "C",
+        "explanation": "Block sizes are typically configurable in the range of 2 KB to 64 KB, depending on system needs and workload characteristics."
+      },
+      {
+        "id": 8,
+        "question": "Row‑oriented storage, which stores entire rows in one block, is best suited for which type of application?",
+        "choices": {
+          "a": "Analytic applications reading a few columns from many rows",
+          "b": "Transactional applications reading and updating individual rows",
+          "c": "Archival storage of unstructured data",
+          "d": "Real‑time video streaming"
+        },
+        "answer": "B",
+        "explanation": "Row‑oriented storage is optimal for transactional applications where a complete row is frequently accessed or modified."
+      },
+      {
+        "id": 9,
+        "question": "When a table contains a very large column (such as a megabyte‑sized image), what common strategy is used to maintain efficient row‑oriented storage?",
+        "choices": {
+          "a": "Compress the row so that the entire row fits in a single block",
+          "b": "Split the large column into multiple smaller columns",
+          "c": "Store a link or pointer in the table and place the large column in a separate storage area",
+          "d": "Convert the table to column‑oriented storage"
+        },
+        "answer": "C",
+        "explanation": "Large columns are often stored externally with only a pointer retained in the main table to keep the row size small."
+      },
+      {
+        "id": 10,
+        "question": "Column‑oriented storage is best for:",
+        "choices": {
+          "a": "Transactional applications that frequently update single rows",
+          "b": "Analytic applications that read a few columns from many rows",
+          "c": "Applications that require high write throughput",
+          "d": "Systems with limited main memory"
+        },
+        "answer": "B",
+        "explanation": "Column‑oriented storage is optimal for analytic workloads because it allows efficient reading and compression when only a few columns are needed from a large number of rows."
+      },
+      {
+        "id": 11,
+        "question": "Which table structure does not impose any order on its rows?",
+        "choices": {
+          "a": "Heap table",
+          "b": "Sorted table",
+          "c": "Hash table",
+          "d": "Table cluster"
+        },
+        "answer": "A",
+        "explanation": "Heap tables are unordered; rows are stored in no particular order as they are inserted."
+      },
+      {
+        "id": 12,
+        "question": "Sorted tables store rows in order based on a sort column. One disadvantage of sorted tables is:",
+        "choices": {
+          "a": "Poor performance for range queries",
+          "b": "Inefficient insert and update operations due to maintaining sort order",
+          "c": "Excessive storage space usage",
+          "d": "Inability to support indexes"
+        },
+        "answer": "B",
+        "explanation": "Maintaining a sorted order on insert or update requires shifting rows or splitting blocks, which can slow down these operations."
+      },
+      {
+        "id": 13,
+        "question": "Hash tables assign rows to buckets using a hash function. They are particularly efficient for:",
+        "choices": {
+          "a": "Range queries",
+          "b": "Retrieving all rows in sorted order",
+          "c": "Inserts, updates, and deletes when accessing a single row via an exact key match",
+          "d": "Join operations on non-key columns"
+        },
+        "answer": "C",
+        "explanation": "Hash tables excel at quickly locating a row using a hashed key value but are less effective for range queries."
+      },
+      {
+        "id": 14,
+        "question": "Table clusters interleave rows of multiple tables based on a common cluster key. One advantage of table clusters is:",
+        "choices": {
+          "a": "They reduce update overhead for individual rows",
+          "b": "They improve join performance between interleaved tables",
+          "c": "They enable automatic data compression",
+          "d": "They simplify backup procedures"
+        },
+        "answer": "B",
+        "explanation": "By physically storing related rows from different tables together, table clusters can speed up join operations that use the cluster key."
+      },
+      {
+        "id": 15,
+        "question": "A single-level index is termed 'dense' when it:",
+        "choices": {
+          "a": "Contains an entry for every table row",
+          "b": "Has one entry per table block",
+          "c": "Uses a multi-level hierarchy",
+          "d": "Is built on a hash table"
+        },
+        "answer": "A",
+        "explanation": "A dense index includes an entry for every row in the table, making it comprehensive for lookups."
+      },
+      {
+        "id": 16,
+        "question": "A sparse index, in contrast to a dense index, contains:",
+        "choices": {
+          "a": "An entry for every row in the table",
+          "b": "No entries at all",
+          "c": "One entry for each table block",
+          "d": "Multiple entries per row"
+        },
+        "answer": "C",
+        "explanation": "Sparse indexes have one entry per block, making them smaller and faster to search in some scenarios."
+      },
+      {
+        "id": 17,
+        "question": "During a binary search on a sorted single-level index, the number of index blocks read is approximately:",
+        "choices": {
+          "a": "Linear in the total number of blocks",
+          "b": "Proportional to the number of rows",
+          "c": "Logarithmic in the number of index blocks",
+          "d": "Equal to the block size"
+        },
+        "answer": "C",
+        "explanation": "Binary search on a sorted index takes logarithmic time; it requires roughly log2(n) block reads (where n is the number of index blocks)."
+      },
+      {
+        "id": 18,
+        "question": "A multi-level index is organized as a hierarchy. What is the primary advantage of using a multi-level index over a single-level index?",
+        "choices": {
+          "a": "It requires more disk space",
+          "b": "It reduces the number of disk reads needed for a lookup",
+          "c": "It simplifies table scans",
+          "d": "It eliminates the need for binary search"
+        },
+        "answer": "B",
+        "explanation": "Multi-level indexes reduce the number of disk reads by creating a hierarchy where upper levels quickly narrow down the search in the lower levels."
+      },
+      {
+        "id": 19,
+        "question": "If a table has 10 million rows and each index entry occupies 10 bytes, with 4-kilobyte index blocks, approximately how many blocks will a dense single-level index require?",
+        "choices": {
+          "a": "2,500 blocks",
+          "b": "25,000 blocks",
+          "c": "250,000 blocks",
+          "d": "2,500,000 blocks"
+        },
+        "answer": "B",
+        "explanation": "The index size is 10 million × 10 bytes = 100,000,000 bytes. Dividing by 4,000 bytes per block yields 25,000 index blocks."
+      },
+      {
+        "id": 20,
+        "question": "Assuming a fan‑out of 400 index entries per block, roughly how many levels does a dense multi‑level index need for 10 million rows?",
+        "choices": {
+          "a": "2 levels",
+          "b": "3 levels",
+          "c": "4 levels",
+          "d": "5 levels"
+        },
+        "answer": "B",
+        "explanation": "With 10 million rows and a fan‑out of 400, a multi‑level index typically requires about 3 levels (since log₄₀₀(10,000,000) rounded up is approximately 3)."
+      },
+      {
+        "id": 21,
+        "question": "What is 'hit ratio' in the context of query processing?",
+        "choices": {
+          "a": "The number of disk blocks read during a query",
+          "b": "The percentage of table rows that match a query condition",
+          "c": "The speed at which data is transferred from disk",
+          "d": "The difference between index and table block sizes"
+        },
+        "answer": "B",
+        "explanation": "Hit ratio is the fraction (or percentage) of rows in a table that meet the query's predicate, affecting whether an index scan or table scan is chosen."
+      },
+      {
+        "id": 22,
+        "question": "When the hit ratio is low, which query operation is typically more efficient?",
+        "choices": {
+          "a": "Table scan",
+          "b": "Index scan",
+          "c": "Full join",
+          "d": "Sorting the entire table"
+        },
+        "answer": "B",
+        "explanation": "With a low hit ratio, only a small number of rows match the condition, so an index scan (which reads only the necessary index and table blocks) is much more efficient than a full table scan."
+      },
+      {
+        "id": 23,
+        "question": "When an update is performed on a column that is indexed, the index undergoes which process?",
+        "choices": {
+          "a": "The index remains unchanged",
+          "b": "It is treated as a deletion of the old index entry followed by an insertion of the new one",
+          "c": "It only updates the pointer",
+          "d": "It reorganizes the entire index"
+        },
+        "answer": "B",
+        "explanation": "An update to an indexed column is typically handled as a delete followed by an insert; if the index block is full, this may trigger a block split to maintain sorted order."
+      },
+      {
+        "id": 24,
+        "question": "Which index type is typically built on the sort column of a table and is known as the primary or clustering index?",
+        "choices": {
+          "a": "Secondary index",
+          "b": "Dense index",
+          "c": "Primary index",
+          "d": "Hash index"
+        },
+        "answer": "C",
+        "explanation": "A primary or clustering index is built on the sort column (often the primary key) and determines the physical order of rows in a sorted table."
+      },
+      {
+        "id": 25,
+        "question": "What is the main disadvantage of a table update with respect to indexes?",
+        "choices": {
+          "a": "Updates do not affect dense indexes",
+          "b": "Updates can force index block splits, which are expensive operations",
+          "c": "Updates always result in a full table scan",
+          "d": "Updates are not allowed on indexed columns"
+        },
+        "answer": "B",
+        "explanation": "Modifying an indexed column may require deleting the old index entry and inserting a new one; if the target index block is full, a block split may be triggered, which is an expensive operation."
+      }
+    ]
+  }
+  

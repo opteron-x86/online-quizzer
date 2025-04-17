@@ -1,0 +1,307 @@
+{
+    "testName": "Entity-Relationship Modeling & Database Design - Chapter 4 Test",
+    "instructions": "Select the best answer that completes the statement or answers the question based on Chapter 4’s content.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "In an entity-relationship (ER) model, which of the following is an example of an entity?",
+        "choices": {
+          "a": "A table that stores data",
+          "b": "A person, place, product, concept, or activity",
+          "c": "A SQL query that retrieves data",
+          "d": "A relationship between two tables"
+        },
+        "answer": "B",
+        "explanation": "An entity represents a person, place, product, concept, or activity. It is the object about which data are collected."
+      },
+      {
+        "id": 2,
+        "question": "What does a relationship represent in an ER model?",
+        "choices": {
+          "a": "A column in a table",
+          "b": "A connection or association between two (or more) entities",
+          "c": "The rules that enforce data integrity",
+          "d": "A stored procedure"
+        },
+        "answer": "B",
+        "explanation": "A relationship expresses how two (or more) entities are connected or interact in the model."
+      },
+      {
+        "id": 3,
+        "question": "Which of the following best describes an attribute in an ER model?",
+        "choices": {
+          "a": "A foreign key",
+          "b": "A relationship between tables",
+          "c": "A descriptive property or characteristic of an entity",
+          "d": "A SQL command"
+        },
+        "answer": "C",
+        "explanation": "An attribute is a descriptive property that characterizes an entity (for example, a Passenger’s Name or Booking Code)."
+      },
+      {
+        "id": 4,
+        "question": "How are entities typically represented in an ER diagram?",
+        "choices": {
+          "a": "As ellipses",
+          "b": "As rectangles with the entity name inside",
+          "c": "As diamonds",
+          "d": "As lines connecting attributes"
+        },
+        "answer": "B",
+        "explanation": "Entities are usually drawn as rectangles containing the entity name in an ER diagram."
+      },
+      {
+        "id": 5,
+        "question": "In an ER diagram, how are relationships commonly depicted?",
+        "choices": {
+          "a": "As lines connecting the entities",
+          "b": "As circles attached to entities",
+          "c": "As shaded boxes",
+          "d": "As separate tables"
+        },
+        "answer": "A",
+        "explanation": "Relationships are represented by lines connecting the entities that participate in them."
+      },
+      {
+        "id": 6,
+        "question": "When an ER model is implemented in SQL, an entity typically becomes a ______.",
+        "choices": {
+          "a": "column",
+          "b": "query",
+          "c": "table",
+          "d": "index"
+        },
+        "answer": "C",
+        "explanation": "In SQL, each entity is usually implemented as a table, with its attributes becoming columns."
+      },
+      {
+        "id": 7,
+        "question": "What is a reflexive relationship in an ER diagram?",
+        "choices": {
+          "a": "A relationship that relates two different entities",
+          "b": "A relationship that relates an entity to itself",
+          "c": "A relationship without any attributes",
+          "d": "A derived relationship using foreign keys"
+        },
+        "answer": "B",
+        "explanation": "A reflexive relationship is one in which an entity is related to itself (for example, an Employee managing another Employee)."
+      },
+      {
+        "id": 8,
+        "question": "What is the primary purpose of a glossary (or data dictionary) in ER modeling?",
+        "choices": {
+          "a": "To automatically generate the SQL code for table creation",
+          "b": "To document names, synonyms, and complete descriptions of entities, relationships, and attributes",
+          "c": "To store physical storage information for the database",
+          "d": "To list all foreign keys used in the ER diagram"
+        },
+        "answer": "B",
+        "explanation": "A glossary complements the ER diagram by detailing the names, synonyms, and descriptions of the entities, relationships, and attributes."
+      },
+      {
+        "id": 9,
+        "question": "During the discovery phase of ER modeling, which methods are typically used to gather requirements?",
+        "choices": {
+          "a": "Automated SQL query analysis",
+          "b": "Interviews with users and managers, and review of existing documentation",
+          "c": "Performance testing of the existing database",
+          "d": "Direct conversion of existing spreadsheets"
+        },
+        "answer": "B",
+        "explanation": "Discovery involves interviews with stakeholders and document reviews to uncover data requirements."
+      },
+      {
+        "id": 10,
+        "question": "In ER modeling, what does 'cardinality' refer to?",
+        "choices": {
+          "a": "The total number of tables in a database",
+          "b": "The maximum and minimum number of instances of one entity that can be associated with another",
+          "c": "The sorting order of query results",
+          "d": "The complexity of SQL statements"
+        },
+        "answer": "B",
+        "explanation": "Cardinality defines the number of instances (maxima and minima) that can participate in a relationship between entities."
+      },
+      {
+        "id": 11,
+        "question": "In an ER diagram, what do the symbols '1' and 'M' denote?",
+        "choices": {
+          "a": "'1' stands for one instance and 'M' stands for many instances",
+          "b": "'1' indicates the attribute is optional and 'M' indicates it is mandatory",
+          "c": "'1' refers to a weak attribute and 'M' to a strong attribute",
+          "d": "'1' means the relationship is unique and 'M' means it is composite"
+        },
+        "answer": "A",
+        "explanation": "The '1' and 'M' symbols indicate the maximum number of instances: one or many, respectively, in a relationship."
+      },
+      {
+        "id": 12,
+        "question": "What is a weak entity in an ER model?",
+        "choices": {
+          "a": "An entity that contains no attributes",
+          "b": "An entity that can be uniquely identified by its own attributes",
+          "c": "An entity that depends on a strong entity via an identifying relationship and does not have a complete key of its own",
+          "d": "An entity that is rarely used in queries"
+        },
+        "answer": "C",
+        "explanation": "A weak entity lacks its own sufficient identifying attributes and is identified through its relationship with a strong (identifying) entity."
+      },
+      {
+        "id": 13,
+        "question": "Which symbol is commonly used to denote an identifying relationship for a weak entity in an ER diagram?",
+        "choices": {
+          "a": "A dashed line",
+          "b": "A diamond placed near the identifying (strong) entity",
+          "c": "A double circle",
+          "d": "An arrow pointing to the weak entity"
+        },
+        "answer": "B",
+        "explanation": "Identifying relationships are often depicted with a diamond near the strong (identifying) entity to indicate that the weak entity is identified by it."
+      },
+      {
+        "id": 14,
+        "question": "What is a supertype entity in an ER model?",
+        "choices": {
+          "a": "An entity that exists independently without any relationships",
+          "b": "A generalized entity that encompasses common attributes and relationships shared by two or more subtypes",
+          "c": "A weak entity that cannot be identified on its own",
+          "d": "A relationship between two entities"
+        },
+        "answer": "B",
+        "explanation": "A supertype is a generic entity that contains attributes common to several subtypes. The subtypes inherit these attributes."
+      },
+      {
+        "id": 15,
+        "question": "When creating supertype/subtype entities, which attributes are moved to the supertype?",
+        "choices": {
+          "a": "Attributes unique to each subtype",
+          "b": "Attributes that are common to all the subtypes",
+          "c": "Attributes that are rarely used",
+          "d": "Optional attributes only"
+        },
+        "answer": "B",
+        "explanation": "Common attributes shared by all subtype entities are moved to the supertype to avoid redundancy."
+      },
+      {
+        "id": 16,
+        "question": "What does an 'IsA' relationship indicate in ER modeling?",
+        "choices": {
+          "a": "That one relationship replaces multiple attributes",
+          "b": "That a subtype entity is a specialized version of a supertype entity",
+          "c": "That two entities have a many-to-many relationship",
+          "d": "That an entity is weak"
+        },
+        "answer": "B",
+        "explanation": "An 'IsA' relationship denotes that an instance of a subtype is also an instance of its supertype."
+      },
+      {
+        "id": 17,
+        "question": "In crow's foot notation, how is the 'many' portion of cardinality typically represented?",
+        "choices": {
+          "a": "A single short line",
+          "b": "An empty circle",
+          "c": "Three short lines resembling a bird's foot",
+          "d": "A diamond"
+        },
+        "answer": "C",
+        "explanation": "In crow's foot notation, the 'many' side is illustrated by three short lines that resemble the foot of a crow."
+      },
+      {
+        "id": 18,
+        "question": "Within alternative diagram conventions, what does an empty circle adjacent to an entity indicate?",
+        "choices": {
+          "a": "Mandatory participation (minimum 1)",
+          "b": "Optional participation (minimum 0)",
+          "c": "A strong entity",
+          "d": "A unique attribute"
+        },
+        "answer": "B",
+        "explanation": "An empty circle typically signifies that participation is optional, meaning the minimum cardinality is zero."
+      },
+      {
+        "id": 19,
+        "question": "When converting an ER model to a relational schema, what do attributes of an entity become?",
+        "choices": {
+          "a": "Indexes",
+          "b": "Rows",
+          "c": "Columns",
+          "d": "Foreign keys"
+        },
+        "answer": "C",
+        "explanation": "Attributes are implemented as columns in a relational table during conversion from the ER model."
+      },
+      {
+        "id": 20,
+        "question": "What property must a primary key possess in a relational database derived from an ER model?",
+        "choices": {
+          "a": "It must be volatile and change frequently",
+          "b": "It must be unique, non-null, and stable",
+          "c": "It can be duplicated across rows",
+          "d": "It should consist solely of foreign keys"
+        },
+        "answer": "B",
+        "explanation": "A primary key must uniquely identify each row and should not change, ensuring data integrity."
+      },
+      {
+        "id": 21,
+        "question": "Which statement about the direct mapping from an ER model to a relational schema is NOT true?",
+        "choices": {
+          "a": "Entities usually become tables.",
+          "b": "Attributes typically become columns.",
+          "c": "Every relationship always becomes its own table.",
+          "d": "Foreign keys are often used to implement relationships."
+        },
+        "answer": "C",
+        "explanation": "Not every relationship results in a separate table; many relationships are implemented with foreign keys within an existing table."
+      },
+      {
+        "id": 22,
+        "question": "How is the cardinality of an attribute (for example, 1(1) or M(0)) typically represented in an ER diagram?",
+        "choices": {
+          "a": "As a prefix before the attribute name",
+          "b": "As a notation appended after the attribute name",
+          "c": "By coloring the attribute differently",
+          "d": "By drawing the attribute in a diamond"
+        },
+        "answer": "B",
+        "explanation": "Cardinality of attributes is often noted as maximum(minimum) immediately following the attribute name (e.g., 1(1) for singular required)."
+      },
+      {
+        "id": 23,
+        "question": "What distinguishes a unique attribute from a singular attribute in ER modeling?",
+        "choices": {
+          "a": "A singular attribute can be null; a unique attribute cannot.",
+          "b": "A singular attribute means an entity instance has at most one value, whereas a unique attribute also ensures that no two instances share the same value.",
+          "c": "They are the same.",
+          "d": "A unique attribute can be repeated; a singular attribute must be repeated."
+        },
+        "answer": "B",
+        "explanation": "While a singular attribute restricts an entity to one value, a unique attribute additionally guarantees that value is not repeated across entity instances."
+      },
+      {
+        "id": 24,
+        "question": "Which phase immediately follows the analysis phase (including ER modeling) in the database design process?",
+        "choices": {
+          "a": "Physical design",
+          "b": "Logical design",
+          "c": "Implementation",
+          "d": "Testing"
+        },
+        "answer": "B",
+        "explanation": "Logical design converts the high-level ER model into a relational schema (tables, columns, keys) tailored for a specific database system."
+      },
+      {
+        "id": 25,
+        "question": "In ER modeling, when a supertype entity is partitioned into mutually exclusive subtypes, what is this group of subtypes called?",
+        "choices": {
+          "a": "An identifying relationship",
+          "b": "A partition",
+          "c": "A weak entity",
+          "d": "A singular attribute"
+        },
+        "answer": "B",
+        "explanation": "A partition is the grouping of mutually exclusive subtypes within a supertype, often governed by a partition attribute."
+      }
+    ]
+}
+  

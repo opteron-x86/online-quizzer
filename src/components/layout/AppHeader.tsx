@@ -22,7 +22,7 @@ interface AppHeaderProps {
  * Application header component with navigation controls
  * and user account options.
  */
-const AppHeader = ({ toggleSidebar, title = "Quiz Master" }: AppHeaderProps) => {
+const AppHeader = ({ toggleSidebar, title = "ExamForge" }: AppHeaderProps) => {
   const theme = useTheme();
   const navigate = useNavigate();
 

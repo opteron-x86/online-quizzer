@@ -24,7 +24,7 @@ const Footer = () => {
       }}
     >
       <Typography variant="body2" color="text.secondary">
-        &copy; {currentYear} Quiz Master
+        &copy; {currentYear} ExamForge
       </Typography>
       
       <Box sx={{ display: 'flex', gap: 2 }}>

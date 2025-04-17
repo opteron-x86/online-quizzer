@@ -76,6 +76,11 @@ interface QuizContextType {
   resetQuiz: () => void;
   loadQuestionBanks: (courseId: string) => Promise<void>;
   updateAppSettings: (settings: AppSettings) => void;
+  getCourseProgress: () => Promise<Record<string, {
+    completionRate: number;
+    lastAttempt: string;
+    attemptsCount: number;
+  }>>;
 }
 
 // Default app settings
@@ -114,7 +119,15 @@ export const QuizProvider = ({ children }: QuizProviderProps) => {
   const [questionBanks, setQuestionBanks] = useState<QuestionBankListItem[]>([]);
   const [isLoading, setIsLoading] = useState<boolean>(false);
   const [error, setError] = useState<string | null>(null);
-  
+  const getCourseProgress = useCallback(async () => {
+    try {
+      return await quizService.getCourseProgress();
+    } catch (error) {
+      setError("Failed to load course progress");
+      return {};
+    }
+  }, []);
+
   // Load app settings from localStorage
   const [appSettings, setAppSettings] = useLocalStorage<AppSettings>(
     'app-settings', 
@@ -352,7 +365,8 @@ export const QuizProvider = ({ children }: QuizProviderProps) => {
     submitQuiz,
     resetQuiz,
     loadQuestionBanks,
-    updateAppSettings
+    updateAppSettings,
+    getCourseProgress
   };
 
   return (

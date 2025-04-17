@@ -1,7 +1,7 @@
 import React, { ReactNode, useMemo } from 'react';
 import { ThemeProvider as MuiThemeProvider, createTheme, CssBaseline } from '@mui/material';
-import themeConfig from '../styles/themes';
-import { useQuiz } from '../contexts/QuizContext';
+import themeConfig from '@/styles/themes';
+import { useQuiz } from '@/contexts/QuizContext';
 
 interface AppThemeProviderProps {
   children: ReactNode;

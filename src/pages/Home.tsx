@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import {
   Box,
   Typography,
@@ -20,56 +20,60 @@ import { useNavigate } from 'react-router-dom';
 
 // Import the CourseSelection component
 import CourseSelection from '@/components/quiz/CourseSelection';
-import { Course } from '@/components/quiz/CourseSelection';
 
-interface QuizAttempt {
-  id: string;
-  courseId: string;
-  date: number;
-  score: number;
-  percentage: number;
-}
+// Import the Quiz Context
+import { useQuiz } from '@/contexts/QuizContext';
 
 const Home = () => {
   const theme = useTheme();
   const navigate = useNavigate();
   
-  // Mock data until connected to real context
-  const isLoading = false;
-  const error = null;
-  const coursesData: Course[] = [
-    {
-      id: 'D426',
-      code: 'D426',
-      title: 'Data Management',
-      description: 'Learn about data management foundations, including database concepts, normalization, SQL, and entity-relationship modeling.',
-      totalQuestions: 69,
-      estimatedTime: 60,
-      difficulty: 'intermediate',
-      completionRate: 0,
-    }
-  ];
-  
-  const recentAttempts: QuizAttempt[] = [];
+  // Use the quiz context instead of mock data
+  const { courses, isLoading, error, getCourseProgress } = useQuiz();
+
+  // Get course progress data
+  const [progressData, setProgressData] = React.useState<Record<string, {
+    completionRate: number;
+    lastAttempt: string;
+    attemptsCount: number;
+  }>>({});
+
+  // Load course progress when component mounts
+  useEffect(() => {
+    const loadProgress = async () => {
+      try {
+        const progress = await getCourseProgress();
+        setProgressData(progress);
+      } catch (error) {
+        console.error('Error loading course progress:', error);
+      }
+    };
+    
+    loadProgress();
+  }, [getCourseProgress]);
+
+  // Apply progress data to courses
+  const coursesWithProgress = courses.map(course => {
+    const progress = progressData[course.id];
+    return {
+      ...course,
+      completionRate: progress?.completionRate || 0,
+      lastAttempt: progress?.lastAttempt
+    };
+  });
 
   const handleCourseSelect = (courseId: string) => {
     navigate(`/course/${courseId}`);
   };
 
-  // Mocked courses with progress data
-  const coursesWithProgress = coursesData.map(course => {
-    return {
-      ...course,
-      completionRate: 0,
-      lastAttempt: undefined
-    };
-  });
+  // Get recent attempts from the quiz history (this would be implemented in the context)
+  const recentAttempts = []; // This would come from the context
 
   return (
     <Container maxWidth="lg">
       <Box sx={{ mb: 6 }}>
         <Typography variant="h4" component="h1" gutterBottom>
-          Welcome to Quiz Master
+          Welcome to ExamForge
         </Typography>
         <Typography variant="subtitle1" color="text.secondary">
           Test your knowledge with our interactive quizzes
@@ -210,7 +214,7 @@ const Home = () => {
                     bgcolor: theme.palette.grey[100],
                   }
                 }}
-                onClick={() => navigate('/results')}
+                onClick={() => navigate('/history')}
               >
                 View Results
               </Button>

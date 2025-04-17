@@ -16,7 +16,7 @@ import {
   CardContent
 } from '@mui/material';
 import {
-  PlayArrow as StartIcon,
+  // PlayArrow,
   Quiz as QuizIcon,
   History as HistoryIcon,
   Info as InfoIcon
@@ -64,10 +64,10 @@ const CourseManagement = () => {
     startQuiz, 
     courses, 
     questionBanks,
-    loadQuestionBanks,
+    // loadQuestionBanks,
     isLoading, 
     error,
-    quizState
+    // quizState
   } = useQuiz();
 
   // Find the current course

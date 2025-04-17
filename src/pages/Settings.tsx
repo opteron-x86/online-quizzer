@@ -12,7 +12,7 @@ import {
   Card,
   CardContent,
   Grid,
-  useTheme
+  // useTheme
 } from '@mui/material';
 import { Save as SaveIcon, Refresh as RefreshIcon } from '@mui/icons-material';
 import { useQuiz, AppSettings, defaultAppSettings } from '../contexts/QuizContext';
